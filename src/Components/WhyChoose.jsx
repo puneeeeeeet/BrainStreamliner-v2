@@ -10,7 +10,7 @@ const WhyChoose = () => {
     <div className="bg-[#E5E4E2] pb-20 text-[#543310]">
       <div className="flex items-center justify-center text-3xl sm:text-5xl font-customFont
        underline underline-offset-2 pt-20 font-semibold text-[#004aad] animate-fadeinup">
-        Why Choose Us
+        What do we help with?
       </div>
 
       <div className="flex items-center justify-center p-20">
