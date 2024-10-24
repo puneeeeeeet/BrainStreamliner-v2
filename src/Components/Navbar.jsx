@@ -28,12 +28,12 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: 'Home', path:'/' },
     { id: 2, text: 'About us', path:'/AboutUs' },
-    { id: 3, text: 'Self Assessment', path:'/SelfAssessment' },
-    { id: 4, text: 'Workshop', path:'/Workshop' },
-    { id: 5, text: 'Group Therapies', path:'/Group' }, 
-    { id: 6, text: 'Blogs', path:'/Blog' },
-    { id: 7, text: 'Offer', path:'/Offer' },
-    { id: 8, text: 'Contact us', path:'/ContactUs' },
+    { id: 3, text: 'Philosphy', path:'/SelfAssessment' },
+    { id: 4, text: 'In-Person Consultation', path:'/Workshop' },
+    { id: 5, text: 'Virtual Consultation', path:'/Group' }, 
+    { id: 6, text: 'Services', path:'/Blog' },
+    { id: 7, text: 'Contact Us', path:'/Offer' },
+    
   ];
 
   return (
@@ -51,7 +51,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? 'fixed left-0 top-20 w-full h-fit p-2   bg-[#F7F7F8] animate-fadeindown  duration-500  z-20 rounded-b-2xl text-[#7EA1FF] font-semibold text-xl'
+            ? 'fixed left-0 top-20 w-full h-fit  p-2   bg-[#F7F7F8] animate-fadeindown  duration-500  z-20 rounded-b-2xl text-[#7EA1FF] font-semibold text-xl'
             : 'hidden fixed'
         }
       >
@@ -63,7 +63,7 @@ const Navbar = () => {
           <Link to={item.path}
           onClick={handleNav}
             key={item.id}
-            className='p-4  ml-11 w-48  gap-y-2 flex rounded-xl hover:bg-[#7EA1FF]  duration-300 hover:text-white cursor-pointer '>
+            className='p-4   ml-11 w-fit  gap-y-2 flex rounded-xl hover:bg-[#7EA1FF]  duration-300 hover:text-white cursor-pointer '>
             {item.text}
           </Link>
         ))}
