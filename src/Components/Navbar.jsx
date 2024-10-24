@@ -28,7 +28,7 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: 'Home', path:'/' },
     { id: 2, text: 'About us', path:'/AboutUs' },
-    { id: 3, text: 'Philosphy', path:'/SelfAssessment' },
+    { id: 3, text: 'Our Philosphy', path:'/SelfAssessment' },
     { id: 4, text: 'In-Person Consultation', path:'/Workshop' },
     { id: 5, text: 'Virtual Consultation', path:'/Group' }, 
     { id: 6, text: 'Services', path:'/Blog' },
