@@ -1,4 +1,6 @@
 import React from 'react'
+import { Icon } from './icon/icon';
+import { WorkShop } from '../icons/WorkShop';
 
 export const StartTherapy = () => {
   return (
@@ -17,7 +19,18 @@ export const StartTherapy = () => {
         </div>
         <div className='flex w-1/2 gap-3 mt-20 text-white text-[30px] font-extrabold'>
           <div className='w-1/2 h-56 bg-black rounded-md transform transition-transform hover:scale-105 p-2'>
+              
+              <div>
               In-Person Consultation
+              </div>
+              <div className='flex justify-between mx-8 items-end'>
+                <button className='w-5/12 h-fit border-2 border-white rounded-md text-xl transform transition-transform hover:scale-105'>
+                    Book Now
+                </button>
+              <Icon icon={WorkShop} className="w-24 h-24" size="large">
+            {/* IMAGE */}
+          </Icon>
+              </div>
            </div>
           <div className='w-1/2 h-56 bg-blue rounded-md transform transition-transform hover:scale-105 p-2'>
               Virtual Consultation
