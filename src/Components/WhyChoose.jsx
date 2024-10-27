@@ -8,13 +8,13 @@ import { SmartClass } from "../icons/SmartClass";
 const WhyChoose = () => {
   return (
     <div className="bg-[#E5E4E2] pb-20 text-[#543310]">
-      <div className="flex items-center justify-center text-3xl sm:text-5xl font-customFont
-       underline underline-offset-2 pt-20 font-semibold text-[#004aad] animate-fadeinup">
+      <div className="flex items-center justify-center text-3xl sm:text-[70px]
+        pt-20 font-bold text-white animate-fadeinup">
         What do we help with?
       </div>
 
-      <div className="flex items-center justify-center p-20">
-        <div className="text-xl  text-center w-72 font-medium">
+      <div className="flex items-center justify-center p-20 ">
+        <div className="text-xl  text-center w-72 font-semibold text-black">
         Streamlining the path to mental well-being while shaping the next generation of psychology professionals.
         </div>
       </div>
@@ -26,7 +26,7 @@ const WhyChoose = () => {
             Image
             {/* IMAGE */}
           </Icon>
-          <div className="text-2xl py-5  font-semibold">
+          <div className="text-2xl py-5  font-semibold text-black">
           Expert-Led Training
             {/* HEADING */}
           </div>
@@ -40,7 +40,7 @@ const WhyChoose = () => {
           <Icon icon={SmartClass} className="w-24 h-24  ">
             {/* IMAGE */}
           </Icon>
-          <div className="text-2xl py-5  font-semibold">
+          <div className="text-2xl py-5  font-semibold text-black">
           Holistic Approach
             {/* HEADING */}
           </div>
@@ -54,7 +54,7 @@ const WhyChoose = () => {
           <Icon icon={WorkShop} className="w-24 h-24" size="large">
             {/* IMAGE */}
           </Icon>
-          <div className="text-2xl py-5  font-semibold">
+          <div className="text-2xl py-5  font-semibold text-black">
             
           Community & Support
             {/* HEADING */}

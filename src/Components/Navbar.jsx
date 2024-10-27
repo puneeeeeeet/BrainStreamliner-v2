@@ -37,9 +37,9 @@ const Navbar = () => {
   ];
 
   return (
-    <div className={navBack  ? 'navbar active' :'navbar'}>
+    <div className={navBack  ? 'navbar active ' :'navbar'}>
 
-      <div  className={navBack ? 'w-full text-3xl font-bold text-[#FFF8DB] font-customFont   ml-4':'hidden'}>Brain Streamliner</div >
+      <div  className={navBack ? 'w-full text-[45px] font-bold text-[#FFF8DB]   ml-4':'hidden'}>Brain Streamliner</div >
 
       {/* Desktop Navigation */}
       {/* <ul className='hidden md:flex'> */}

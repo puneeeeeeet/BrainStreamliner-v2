@@ -24,7 +24,7 @@ const CoverPage = () => {
           width={75}
         />
 
-        <div className="animate-fadeinup   font-customFont">
+        <div className="animate-fadeinup   text-white text-[80px] font-extrabold">
           BrainStreamliner
         </div>
 
@@ -35,8 +35,8 @@ const CoverPage = () => {
 <div className=" flex flex-col items-center justify-center">
         <button
           onClick={handleClick}
-          className=" relative p-2 border-[#004aad]  text-[#004aad] font-semibold rounded-lg border-2 px-4 text-xl 
-                  mt-20 mb-10 transform transition-transform hover:scale-105 cursor-pointer"
+          className=" relative p-2 border-white  text-white font-bold rounded-lg border-4 px-4 text-2xl 
+                  mt-20 mb-10 transform transition-transform hover:scale-105 cursor-pointer "
           >
           Contact Us
         </button>
