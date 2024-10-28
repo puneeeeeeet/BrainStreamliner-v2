@@ -2,8 +2,8 @@ import React from 'react'
 import tamana from '../assets/tamana.jpg';
 const AboutUs = () => {
   return (
-    <div>
-      <h1 className=' text-3xl ml-6 sm:ml-24 mt-5 text-[#434b6c]'>
+    <div className='w-full h-full'>
+      <h1 className=' text-3xl ml-6 sm:ml-24  mt-5 text-[#434b6c]'>
         About Us
       </h1>
       {/* First Section */}
@@ -15,7 +15,7 @@ const AboutUs = () => {
         <div className='w-10/12 sm:w-96 h-full  flex  justify-center text-[#304463] py-4 sm:py-0'>
           <div className=''>
             <a href="https://www.linkedin.com/in/puneet-chhabra-3089b621b/" className='text-4xl  font-bold underline underline-offset-2'>
-            Dr. Gayatri Ahuja
+           Gayatri Ahuja
             </a>
             <p className='text-wrap text-justify  mt-5 text-black'>
             Welcome to "Brainstreamliner", a company dedicated to revolutionizing mental health and professional training in psychology. 

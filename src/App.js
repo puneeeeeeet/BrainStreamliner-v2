@@ -7,7 +7,7 @@ import ContactUs from "./Pages/ContactUs";
 import Group from "./Pages/Group";
 import Offer from "./Pages/Offer";
 import Workshop from "./Pages/Workshop";
-import SelfAssessment from "./Pages/SelfAssessment";
+import Philosophy from "./Pages/Philosophy";
 function App() {
   return (
     <div className="bg-[#eaeaea] ">
@@ -21,7 +21,7 @@ function App() {
         <Route path="/Group" element={<Group></Group>} />
         <Route path="/Offer" element={<Offer></Offer>} />
         <Route path="/Workshop" element={<Workshop></Workshop>} />
-        <Route path="/SelfAssessment" element={<SelfAssessment></SelfAssessment>} />
+        <Route path="/Philosophy" element={<Philosophy></Philosophy>} />
       </Routes>
     </div>
   );

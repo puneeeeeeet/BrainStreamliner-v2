@@ -6,6 +6,8 @@ module.exports = {
       blue: "#004aad",
       black: "#000000",
       white: "#ffffff",
+      pink: "#FFC7ED",
+      voilet:"#7D8ABC"
     },
     fontFamily: {
       customFont: ["Fondamento", 'cursive'],
