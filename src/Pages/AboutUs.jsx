@@ -1,9 +1,14 @@
 import React from 'react'
 import tamana from '../assets/tamana.jpg';
+import NavbarComm from '../Components/NavbarComm';
+
 const AboutUs = () => {
+
+ 
   return (
     <div className='w-full h-full'>
-      <h1 className=' text-3xl ml-6 sm:ml-24  mt-5 text-[#434b6c]'>
+      <NavbarComm></NavbarComm>
+      <h1 className='  ml-6 sm:ml-24  mt-20 text-white text-[75px] font-bold'>
         About Us
       </h1>
       {/* First Section */}
