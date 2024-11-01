@@ -20,7 +20,7 @@ export const StartTherapy = () => {
           create a path toward clarity, healing, and a brighter tomorrow.
         </div>
         <div className="flex w-3/4 gap-7 mt-20 text-white text-[30px] font-extrabold justify-between  px-20 ">
-          <div className="w-5/12 h-56 border-[#A5B68D] border-2 text-[#A5B68D] rounded-md transform transition-transform hover:scale-105  p-2 shadow-2xl pt-5">
+          <div className="w-5/12 h-56 border-[#A5B68D] border-2 text-green rounded-md transform transition-transform hover:scale-105  p-2 shadow-2xl pt-5">
             <div className="flex items-center justify-center">
               In-Person Consultation
             </div>
@@ -31,7 +31,7 @@ export const StartTherapy = () => {
               >
                 Book Now
               </button>
-              <Icon icon={WorkShop} className="w-24 h-24 text-[#A5B68D] " size="large">
+              <Icon icon={WorkShop} className="w-24 h-24 text-green " size="large">
                 {/* IMAGE */}
               </Icon>
             </div>
