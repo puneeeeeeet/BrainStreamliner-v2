@@ -39,14 +39,14 @@ const Navbar = () => {
   return (
     <div className={navBack  ? 'navbar active ' :'navbar'}>
 
-      <div  className={navBack ? 'w-full text-[45px] font-bold text-[#FFF8DB]   ml-4':'hidden'}>Brain Streamliner</div >
+      <Link  to={'/'} className={navBack ? 'w-full text-[45px] font-bold text-[#FFF8DB]   ml-4':'hidden'}>Brain Streamliner</Link >
 
       {/* Desktop Navigation */}
       {/* <ul className='hidden md:flex'> */}
 
       {/* ICON FOR NAVIGAYION OPEN AND CLOSE */}
       <div className='hidden md:flex' onClick={handleNav}>
-      {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      {nav ? <AiOutlineClose size={25}  className='cursor-pointer '/> : <AiOutlineMenu size={25} className='cursor-pointer ' />}
       {/* */}
       <ul
         className={
@@ -72,7 +72,7 @@ const Navbar = () => {
       
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className={navBack ? "block md:hidden z-10 ": "hidden"}>
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        {nav ? <AiOutlineClose size={20} className='cursor-pointer' /> : <AiOutlineMenu size={20} className='cursor-pointer' />}
       </div>
 
       {/* Mobile Navigation Menu */}

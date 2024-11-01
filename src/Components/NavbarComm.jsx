@@ -40,7 +40,7 @@ const NavbarComm = () => {
   return (
     <div className={'navbar active ' }>
 
-      <div  className={ 'w-full text-[45px] font-bold text-[#FFF8DB]   ml-4'}>Brain Streamliner</div >
+      <Link to={'/'} className={ 'w-full text-[45px] font-bold text-[#FFF8DB]   ml-4'}>Brain Streamliner</Link >
 
       {/* Desktop Navigation */}
       {/* <ul className='hidden md:flex'> */}
