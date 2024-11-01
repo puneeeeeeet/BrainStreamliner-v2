@@ -1,4 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import anxious from '../assets/anxious.gif'
+import ocd from '../assets/ocd.gif'
+import depression from '../assets/depression.gif'
+import stress from '../assets/stress.gif'
+import ptsd from '../assets/ptsd.gif'
+import personality from '../assets/personalityy.gif'
+import anger from '../assets/anger.gif'
+import sleep from '../assets/sleep.gif'
+import last from '../assets/last.gif'
 
 const WhatWeDo = () => {
   const [scrollIndex, setScrollIndex] = useState(0);  
@@ -17,15 +26,15 @@ const WhatWeDo = () => {
   }, []);
 
   const data = [
-    { blackBoxText: 'Anxiety', sideBoxText: 'There is a lot happening in the world. Somehow, there’s more happening in your mind. We can help.' },
-    { blackBoxText: 'Depression', sideBoxText: 'Sometimes, getting out of bed is an ordeal. We can help.' },
-    { blackBoxText: 'OCD', sideBoxText: 'Where the mind insists on a replay, even when the heart wants to move forward' },
-    { blackBoxText: 'PTSD', sideBoxText: 'A past echo that disrupts today’s melody.' },
-    { blackBoxText: 'Sleep Disorder', sideBoxText: 'Contrary to pop culture wisdom, love is not always easy. And that’s okay.We can help.' },
-    { blackBoxText: 'Stress', sideBoxText: 'Today’s hustle culture has normalized constant stress. That’s not the way it needs to be. We can help' },
-    { blackBoxText: 'Anger Issues', sideBoxText: 'A fleeting spark that can burn bridges.' },
-    { blackBoxText: 'Personality Disorder', sideBoxText: 'A complex dance of traits, where understanding and support lead the way.' },
-    { blackBoxText: 'Substance Dependence', sideBoxText: 'When the chains are invisible, but the struggle is real.' }
+    { blackBoxText: 'Anxiety', sideBoxText: 'There is a lot happening in the world. Somehow, there’s more happening in your mind. We can help.' ,source:anxious},
+    { blackBoxText: 'Depression', sideBoxText: 'Sometimes, getting out of bed is an ordeal. We can help.',source:depression },
+    { blackBoxText: 'OCD', sideBoxText: 'Where the mind insists on a replay, even when the heart wants to move forward',source:ocd },
+    { blackBoxText: 'PTSD', sideBoxText: 'A past echo that disrupts today’s melody.',source:ptsd },
+    { blackBoxText: 'Sleep Disorder', sideBoxText: 'Contrary to pop culture wisdom, love is not always easy. And that’s okay.We can help.',source:sleep },
+    { blackBoxText: 'Stress', sideBoxText: 'Today’s hustle culture has normalized constant stress. That’s not the way it needs to be. We can help' ,source:stress},
+    { blackBoxText: 'Anger Issues', sideBoxText: 'A fleeting spark that can burn bridges.',source:anger },
+    { blackBoxText: 'Personality Disorder', sideBoxText: 'A complex dance of traits, where understanding and support lead the way.' ,source:personality},
+    { blackBoxText: 'Substance Dependence', sideBoxText: 'When the chains are invisible, but the struggle is real.' ,source:last}
   ];
 
   return (
@@ -52,7 +61,9 @@ const WhatWeDo = () => {
             className='flex sticky w-11/12 mb-24 items-end justify-center'
             style={{ top: `${150 + index * 5}px` }}  // Adjust this value for overlap
           >
-            <div className='blackBox'>{item.blackBoxText}</div>
+            <div className='blackBox'>
+              <img src={item.source} alt=""  className='w-20 h-24 m-2 '/>
+              <p className=' text-center'>{item.blackBoxText}</p></div>
             <div className='sideBox'>{item.sideBoxText}</div>
           </div>
           ))}

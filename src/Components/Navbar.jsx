@@ -32,7 +32,7 @@ const Navbar = () => {
     { id: 4, text: 'In-Person Consultation', path:'/Workshop' },
     { id: 5, text: 'Virtual Consultation', path:'/Group' }, 
     { id: 6, text: 'Services', path:'/Blog' },
-    { id: 7, text: 'Contact Us', path:'/Offer' },
+    { id: 7, text: 'Contact Us', path:'/ContactUs' },
     
   ];
 
