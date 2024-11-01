@@ -33,16 +33,16 @@ const CoverPage = () => {
 
         
 <div className=" flex flex-col items-center justify-center">
-        <button
-          onClick={handleClick}
+        <a
+          href="https://wa.link/89ynnj"
           className=" relative p-2 border-white  text-white font-bold rounded-lg border-4 px-4 text-2xl 
                   mt-20 mb-10 transform transition-transform hover:scale-105 cursor-pointer "
           >
           Contact Us
-        </button>
+        </a>
 
         {/* Left (Signup) Option */}
-        <div
+        {/* <div
           className={`relative left-[-200px]  transition-all duration-300 transform ${
             showOptions ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'
           }`}
@@ -50,10 +50,10 @@ const CoverPage = () => {
           <button className="bg-green-500 text-white px-4  rounded-full transition-transform hover:scale-105">
             Signup
           </button>
-        </div>
+        </div> */}
 
         {/* Right (Register) Option */}
-        <div
+        {/* <div
           className={`relative right-[-200px] top-[-68px] transition-all duration-300 transform ${
             showOptions ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'
           }`}
@@ -61,7 +61,7 @@ const CoverPage = () => {
           <button className="bg-red-500 text-white px-4  rounded-full transition-transform hover:scale-105">
             Register
           </button>
-        </div>
+        </div> */}
       </div>
 
           
