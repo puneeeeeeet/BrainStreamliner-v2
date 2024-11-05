@@ -11,7 +11,7 @@ const CoverPage = () => {
   };
 
   return (
-    <div className="w-screen h-[130vh] sm:h-screen sm:flex bg-[#E5E4E2]    ">
+    <div className="w-screen h-[fit] sm:h-screen sm:flex bg-[#E5E4E2]    ">
       <div
         className="h-11/12  sm:w-8/12 sm:h-full  flex flex-col items-center justify-center sm:text-7xl text-4xl 
             font-semibold  text-[#004aad] bg-[#E5E4E2]  "
@@ -24,7 +24,7 @@ const CoverPage = () => {
           width={75}
         />
 
-        <div className="animate-fadeinup   text-white text-[80px] font-extrabold">
+        <div className="animate-fadeinup   text-white text-[40px] sm:text-[80px] font-extrabold">
           BrainStreamliner
         </div>
 
@@ -35,7 +35,7 @@ const CoverPage = () => {
 <div className=" flex flex-col items-center justify-center">
         <a
           href="https://wa.link/89ynnj"
-          className=" relative p-2 border-white  text-white font-bold rounded-lg border-4 px-4 text-2xl 
+          className=" relative sm:p-2 border-white  text-white font-bold rounded-lg  border-2 sm:border-4 px-4 text-[20px] sm:text-2xl 
                   mt-20 mb-10 transform transition-transform hover:scale-105 cursor-pointer "
           >
           Contact Us

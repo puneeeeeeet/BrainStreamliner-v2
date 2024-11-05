@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <div className={navBack  ? 'navbar active ' :'navbar'}>
 
-      <Link  to={'/'} className={navBack ? 'w-full text-[45px] font-bold text-[#FFF8DB]   ml-4':'hidden'}>Brain Streamliner</Link >
+      <Link  to={'/'} className={navBack ? 'w-full text-3xl sm:text-[45px] font-bold text-[#FFF8DB]   ml-4':'hidden'}>Brain Streamliner</Link >
 
       {/* Desktop Navigation */}
       {/* <ul className='hidden md:flex'> */}
