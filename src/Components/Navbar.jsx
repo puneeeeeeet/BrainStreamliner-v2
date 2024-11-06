@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <div className={navBack  ? 'navbar active ' :'navbar'}>
 
-      <Link  to={'/'} className={navBack ? 'w-full text-3xl sm:text-[45px] font-bold text-[#FFF8DB]   ml-4':'hidden'}>Brain Streamliner</Link >
+      <Link  to={'/'} className={navBack ? 'w-full text-3xl sm:text-[45px] font-bold text-[#8dc73f]   ml-4':'hidden'}>Brain Streamliner</Link >
 
       {/* Desktop Navigation */}
       {/* <ul className='hidden md:flex'> */}
@@ -51,7 +51,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? 'fixed left-0 top-20 w-full h-fit  p-2   bg-[#F7F7F8] animate-fadeindown  duration-500  z-20 rounded-b-2xl text-[#7EA1FF] font-semibold text-xl'
+            ? navBack ? 'fixed left-0 top-20 w-full h-fit  p-2   bg-[#F7F7F8] animate-fadeindown  duration-500  z-20 rounded-b-2xl text-[#8dc73f] font-semibold text-xl':'hidden'
             : 'hidden fixed'
         }
       >
@@ -63,7 +63,7 @@ const Navbar = () => {
           <Link to={item.path}
           onClick={handleNav}
             key={item.id}
-            className='p-4   ml-11 w-fit  gap-y-2 flex rounded-xl hover:bg-[#7EA1FF]  duration-300 hover:text-white cursor-pointer '>
+            className='p-4   ml-11 w-fit  gap-y-2 flex rounded-xl hover:bg-[#8dc73f]  duration-300 hover:text-white cursor-pointer '>
             {item.text}
           </Link>
         ))}

@@ -6,7 +6,7 @@ import { SmartClass } from '../icons/SmartClass';
 
 export const StartTherapy = () => {
   return (
-    <div className="w-screen h-fit sm:h-screen bg-white">
+    <div className="w-screen h-fit sm:h-screen bg-[#F5F7F8]">
       <div className="flex flex-col items-center">
         <div className="pt-20 text-2xl font-semibold">
           Start Your Therapy With

@@ -35,7 +35,7 @@ const CoverPage = () => {
 <div className=" flex flex-col items-center justify-center">
         <a
           href="https://wa.link/89ynnj"
-          className=" relative sm:p-2 border-white  text-white font-bold rounded-lg  border-2 sm:border-4 px-4 text-[20px] sm:text-2xl 
+          className=" relative sm:p-2 border-white  text-white font-bold rounded-lg  border-2 sm:border-[3px] px-4 text-[20px] sm:text-2xl 
                   mt-20 mb-10 transform transition-transform hover:scale-105 cursor-pointer "
           >
           Contact Us
