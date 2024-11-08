@@ -39,7 +39,7 @@ const WhatWeDo = () => {
 
   return (
     <>
-      <div className='w-screen h-[400vh] sm:h-fit flex sm:flex-row flex-col text-blue bg-[#F5F7F8] relative pb-44'>
+      <div className='w-screen h-fit sm:h-fit flex sm:flex-row flex-col text-blue bg-[#F5F7F8] relative pb-44'>
         <div className='sm:w-1/2 w-full sm:flex sm:items-center flex-col gap-5'>
           <div className='sticky top-0 sm:top-56 sm:ml-40 sm:pb-40 mt-56 sm:w-full w-11/12 ml-4'>
             <div className='flex flex-col sm:w-1/2 w-3/4 text-xl font-customFont'>
@@ -58,15 +58,15 @@ const WhatWeDo = () => {
           {data.map((item, index) => (
             <div
             key={index}
-            className='flex sticky w-full mb-24 items-end justify-center  transform transition-transform hover:scale-105 '
+            className='flex sticky w-full mb-24 items-end justify-center  sm:transform sm:transition-transform sm:hover:scale-105 '
             style={{ top: `${150 + index * 0}px` }}  // Adjust this value for overlap
           >
            
               
-            <div className='w-4/5 px-2 h-fit p-4 gap-2  rounded-xl flex  text-left items-start text-black text-lg font-semibold   shadow-lg bg-white'>
+            <div className='w-4/5 px-2 sm:h-fit h-64 p-4 gap-2  rounded-xl flex flex-col sm:flex-row  text-left items-center sm:items-start text-black text-lg font-semibold   shadow-lg bg-white'>
             <img src={item.source} alt=""  className='w-20 h-20 bg-white rounded-full'/>
             
-            <div className='flex flex-col'>
+            <div className='flex flex-col items-center sm:items-start'>
             <p className=' text-left font-extrabold'>{item.blackBoxText}</p>
             <p>{item.sideBoxText}</p>
               </div>
