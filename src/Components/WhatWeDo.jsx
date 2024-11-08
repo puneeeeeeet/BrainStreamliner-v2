@@ -59,16 +59,17 @@ const WhatWeDo = () => {
             <div
             key={index}
             className='flex sticky w-full mb-24 items-end justify-center  transform transition-transform hover:scale-105 '
-            style={{ top: `${150 + index * 5}px` }}  // Adjust this value for overlap
+            style={{ top: `${150 + index * 0}px` }}  // Adjust this value for overlap
           >
-            <div className='blackBox bg-white'>
-              <img src={item.source} alt=""  className='w-20 h-20 bg-white rounded-full'/>
+           
               
-              </div>
-              
-            <div className='sideBox bg-white'>
-            <p className=' text-center font-extrabold'>{item.blackBoxText}</p>
+            <div className='w-4/5 px-2 h-fit p-4 gap-2  rounded-xl flex  text-left items-start text-black text-lg font-semibold   shadow-lg bg-white'>
+            <img src={item.source} alt=""  className='w-20 h-20 bg-white rounded-full'/>
+            
+            <div className='flex flex-col'>
+            <p className=' text-left font-extrabold'>{item.blackBoxText}</p>
             <p>{item.sideBoxText}</p>
+              </div>
             </div>
           </div>
           ))}

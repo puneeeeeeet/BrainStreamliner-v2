@@ -25,11 +25,4 @@ code {
   @apply bg-[#ffff] fixed top-0 flex justify-between items-center h-20  mx-auto px-4 text-[#8dc73f] w-full z-30
 }
 
-.blackBox{
-  @apply  h-44 sm:h-28 w-36 sm:w-fit  items-center font-bold  text-xl rounded-l-xl bg-white  flex  justify-center flex-col  shadow-2xl
-}
-
-.sideBox{
-  @apply w-4/5 px-2 h-28 bg-white rounded-r-xl flex flex-col text-left items-start justify-center text-black text-lg font-semibold   shadow-2xl
-}
 /* bg-[#FFAD60] */
