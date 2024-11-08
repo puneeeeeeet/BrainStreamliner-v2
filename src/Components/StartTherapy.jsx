@@ -36,7 +36,7 @@ export const StartTherapy = () => {
               </Icon>
             </div>
           </div>
-          <div className=" w-sm:w-5/12 h-56  border-2 text-[#7D8ABC] border-[#7D8ABC] rounded-md transform transition-transform hover:scale-105 p-2 shadow-2xl pt-5">
+          <div className=" w-full sm:w-5/12 h-56  border-2 text-[#7D8ABC] border-[#7D8ABC] rounded-md transform transition-transform hover:scale-105 p-2 shadow-2xl pt-5">
             <div className=" flex items-center justify-center">
               Virtual Consultation
             </div>

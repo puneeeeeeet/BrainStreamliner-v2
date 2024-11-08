@@ -39,7 +39,7 @@ const WhatWeDo = () => {
 
   return (
     <>
-      <div className='w-screen h-[400vh] sm:h-[400vh] flex sm:flex-row flex-col text-blue bg-[#F5F7F8] relative pb-44'>
+      <div className='w-screen h-[400vh] sm:h-fit flex sm:flex-row flex-col text-blue bg-[#F5F7F8] relative pb-44'>
         <div className='sm:w-1/2 w-full sm:flex sm:items-center flex-col gap-5'>
           <div className='sticky top-0 sm:top-56 sm:ml-40 sm:pb-40 mt-56 sm:w-full w-11/12 ml-4'>
             <div className='flex flex-col sm:w-1/2 w-3/4 text-xl font-customFont'>
@@ -58,13 +58,18 @@ const WhatWeDo = () => {
           {data.map((item, index) => (
             <div
             key={index}
-            className='flex sticky w-11/12 mb-24 items-end justify-center'
+            className='flex sticky w-full mb-24 items-end justify-center  transform transition-transform hover:scale-105 '
             style={{ top: `${150 + index * 5}px` }}  // Adjust this value for overlap
           >
-            <div className='blackBox'>
-              <img src={item.source} alt=""  className='w-20 h-24 m-2 '/>
-              <p className=' text-center'>{item.blackBoxText}</p></div>
-            <div className='sideBox'>{item.sideBoxText}</div>
+            <div className='blackBox bg-white'>
+              <img src={item.source} alt=""  className='w-20 h-20 bg-white rounded-full'/>
+              
+              </div>
+              
+            <div className='sideBox bg-white'>
+            <p className=' text-center font-extrabold'>{item.blackBoxText}</p>
+            <p>{item.sideBoxText}</p>
+            </div>
           </div>
           ))}
 

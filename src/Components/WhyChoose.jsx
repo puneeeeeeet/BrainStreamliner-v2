@@ -7,77 +7,54 @@ import { SmartClass } from "../icons/SmartClass";
 
 const WhyChoose = () => {
   return (
-    <div className="bg-[#E5E4E2] pb-20 text-[#543310]">
-      <div className="flex items-center justify-center text-3xl sm:text-[70px]
-        pt-20 font-bold text-white animate-fadeinup">
-        What do we help with?
+    <div className="bg-gray-100 pb-20 text-[#543310] h-screen">
+      {/* Header */}
+      <div className="flex items-center justify-center text-4xl sm:text-5xl text-gray-800 pt-20 font-bold">
+        What Do We Help With?
       </div>
 
-      <div className="flex items-center justify-center p-20 ">
-        <div className="text-xl  text-center w-72 font-semibold text-black">
-        Streamlining the path to mental well-being while shaping the next generation of psychology professionals.
+      {/* Description */}
+      <div className="flex items-center justify-center mt-6 sm:mt-10">
+        <div className="text-lg sm:text-xl text-center w-11/12 sm:w-4/12 font-medium text-gray-700 ">
+          Streamlining the path to mental well-being while shaping the next generation of psychology professionals.
         </div>
       </div>
 
-      <div className="flex items-center justify-center flex-col  sm:flex-row px-8 gap-6">
-        <div className="sm:w-80 w-full  h-96 flex items-center justify-center  flex-col 
-        border-4 border-white  rounded-md hover:animate-bounce">
-          <Icon icon={Guideance} color="blue" className="w-24 h-24">
-            Image
-            {/* IMAGE */}
-          </Icon>
-          <div className="text-2xl py-5  font-semibold text-black">
-          Expert-Led Training
-            {/* HEADING */}
+      {/* Service Cards */}
+      <div className="flex items-center justify-center flex-col sm:flex-row px-6 sm:px-10 gap-8 sm:mt-28">
+        
+        {/* Card 1 */}
+        <div className="w-full sm:w-80 h-full flex flex-col items-center bg-white rounded-lg shadow-md border-t-4 border-blue-500 p-8 hover:scale-105 transition-transform duration-300 ease-out">
+          <Icon icon={Guideance} className="w-20 h-20 text-blue-500" />
+          <div className="text-2xl py-4 font-semibold text-gray-800">
+            Expert-Led Training
           </div>
-          <div className="text-xl text-center px-2 ">
-          Learn from seasoned professionals with extensive experience in various fields of psychology.
-            </div>
+          <div className="text-center text-gray-600">
+            Learn from seasoned professionals with extensive experience in various fields of psychology.
+          </div>
         </div>
 
-        <div className="sm:w-80 w-full  h-96 flex items-center justify-center  
-        flex-col border-4 border-white rounded-md hover:animate-bounce">
-          <Icon icon={SmartClass} className="w-24 h-24  ">
-            {/* IMAGE */}
-          </Icon>
-          <div className="text-2xl py-5  font-semibold text-black">
-          Holistic Approach
-            {/* HEADING */}
+        {/* Card 2 */}
+        <div className="w-full sm:w-80 h-auto flex flex-col items-center bg-white rounded-lg shadow-md border-t-4 border-green-500 p-8 hover:scale-105 transition-transform duration-300 ease-out">
+          <Icon icon={SmartClass} className="w-20 h-20 text-green-500" />
+          <div className="text-2xl py-4 font-semibold text-gray-800">
+            Holistic Approach
           </div>
-          <div className="text-xl text-center px-2">
-          We believe in a well-rounded education, combining theoretical knowledge with practical skills.
-            </div>
+          <div className="text-center text-gray-600">
+            We believe in a well-rounded education, combining theoretical knowledge with practical skills.
+          </div>
         </div>
 
-        <div className="sm:w-80 w-full  h-96 flex items-center justify-center  
-        flex-col border-4 border-white rounded-md hover:animate-bounce">
-          <Icon icon={WorkShop} className="w-24 h-24" size="large">
-            {/* IMAGE */}
-          </Icon>
-          <div className="text-2xl py-5  font-semibold text-black">
-            
-          Community & Support
-            {/* HEADING */}
+        {/* Card 3 */}
+        <div className="w-full sm:w-80 h-auto flex flex-col items-center bg-white rounded-lg shadow-md border-t-4 border-purple-500 p-5 hover:scale-105 transition-transform duration-300 ease-out">
+          <Icon icon={WorkShop} className="w-20 h-20 text-purple-500" />
+          <div className="text-2xl py-4 font-semibold text-gray-800">
+            Community & Support
           </div>
-          <div className="text-xl text-center px-2">
-          Join a network of like-minded individuals, with opportunities for collaboration, networking, and support.
-            </div>
+          <div className="text-center text-gray-600">
+            Join a network of like-minded individuals, with opportunities for collaboration, networking, and support.
+          </div>
         </div>
-
-        {/* <div className="sm:w-80 w-full  h-96 flex items-center justify-center 
-        flex-col border-4 border-white rounded-md hover:animate-bounce">
-          <Icon icon={Girl} className="w-24 h-24 " color="blue">
-            
-          </Icon>
-          <div className="text-2xl py-5 font-semibold ">
-          
-            Councelling & Guidence
-            
-          </div>
-          <div className="text-xl text-center px-2">
-          We conduct career counselling, psychometric testing,one-to-one workshops in Schools.
-            </div>
-        </div> */}
       </div>
     </div>
   );
