@@ -1,8 +1,10 @@
 import React from 'react'
-
+import NavbarComm from '../Components/NavbarComm'
 const Group = () => {
   return (
-    <div>Group</div>
+    <div>
+      <NavbarComm></NavbarComm>
+    </div>
   )
 }
 

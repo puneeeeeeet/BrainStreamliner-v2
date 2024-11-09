@@ -1,8 +1,10 @@
 import React from 'react'
-
+import NavbarComm from '../Components/NavbarComm'
 const Workshop = () => {
   return (
-    <div>Workshop</div>
+    <div>
+      <NavbarComm></NavbarComm>
+    </div>
   )
 }
 

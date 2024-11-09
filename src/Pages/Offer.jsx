@@ -1,8 +1,11 @@
 import React from 'react'
+import NavbarComm from '../Components/NavbarComm'
 
 const Offer = () => {
   return (
-    <div>Offer</div>
+    <div>
+      <NavbarComm></NavbarComm>
+    </div>
   )
 }
 

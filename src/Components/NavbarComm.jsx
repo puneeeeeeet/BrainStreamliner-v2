@@ -40,7 +40,7 @@ const NavbarComm = () => {
   return (
     <div className={'navbar active ' }>
 
-      <Link to={'/'} className={ 'w-full text-[45px] font-bold text-[#FFF8DB]   ml-4'}>Brain Streamliner</Link >
+      <Link to={'/'} className={ 'w-full text-[45px] font-bold text-[#8dc73f]   ml-4'}>Brain Streamliner</Link >
 
       {/* Desktop Navigation */}
       {/* <ul className='hidden md:flex'> */}
@@ -52,7 +52,7 @@ const NavbarComm = () => {
       <ul
         className={
           nav
-            ? 'fixed left-0 top-20 w-full h-fit  p-2   bg-[#F7F7F8] animate-fadeindown  duration-500  z-20 rounded-b-2xl text-[#7EA1FF] font-semibold text-xl'
+            ? 'fixed left-0 top-20 w-full h-fit  p-2   bg-[#F7F7F8] animate-fadeindown  duration-500  z-20 rounded-b-2xl text-[#8dc73f] font-semibold text-xl'
             : 'hidden fixed'
         }
       >
@@ -64,7 +64,7 @@ const NavbarComm = () => {
           <Link to={item.path}
           onClick={handleNav}
             key={item.id}
-            className='p-4   ml-11 w-fit  gap-y-2 flex rounded-xl hover:bg-[#7EA1FF]  duration-300 hover:text-white cursor-pointer '>
+            className='p-4   ml-11 w-fit  gap-y-2 flex rounded-xl hover:bg-[#8dc73f] duration-300 hover:text-white cursor-pointer '>
             {item.text}
           </Link>
         ))}
@@ -80,7 +80,7 @@ const NavbarComm = () => {
       <ul
         className={
           nav
-            ? 'fixed md:hidden left-0 top-0 w-[70%] h-full  bg-[#7EA1FF] ease-in-out duration-500 z-20'
+            ? 'fixed md:hidden left-0 top-0 w-[70%] h-full  bg-[#8dc73f] ease-in-out duration-500 z-20'
             : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
         }
       >
@@ -90,7 +90,7 @@ const NavbarComm = () => {
           <Link to={item.path}
           onClick={handleNav}
             key={item.id}
-            className='p-4  flex rounded-xl hover:bg-[#004aad] duration-300 hover:text-[#FFF8DB] cursor-pointer '>
+            className='p-4  flex rounded-xl hover:bg-[#8dc73f] duration-300 hover:text-[#FFF8DB] cursor-pointer '>
             {item.text}
           </Link>
         ))}
