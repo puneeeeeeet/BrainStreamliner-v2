@@ -32,11 +32,11 @@ const Footer = () => {
           </div>
           <div className="flex  mt-5">
             <div>
-              <div className="font-extrabold text-blue text-xl ">Email</div>
+              <div className="font-extrabold text-blue text-xl mb-4 ">Email</div>
               <div>-brainstreamliner@gmail.com</div>
             </div>
             <div className='mx-32'>
-              <div className="font-extrabold text-blue text-xl">Social Media</div>
+              <div className="font-extrabold text-blue text-xl mb-4">Social Media</div>
               <div className="flex  justify-between gap-2 ">
                 {ContactItems.map((item) => (
                   <a key={item.id} href={item.to} className="">
@@ -55,7 +55,7 @@ const Footer = () => {
           Where we are
         </div>
         <div className='mt-5 '>
-          <div className='font-extrabold text-blue text-xl'>
+          <div className='font-extrabold text-blue text-xl mb-4'>
             Address
           </div>
           <div className='flex gap-4'>
