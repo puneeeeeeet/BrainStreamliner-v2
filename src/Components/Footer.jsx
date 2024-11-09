@@ -8,10 +8,6 @@ const Footer = () => {
 
   const ContactItems = [
     {
-      id:1,
-      ImagePath:gmail,
-      to:'mailto:brainstreamliner@gmail.com',
-    },{
       id:2,
       ImagePath:whatsapp,
       to:'https://api.whatsapp.com/send?phone=918708992663',
@@ -28,35 +24,70 @@ const Footer = () => {
 
 
   return (
-    <div className="sm:flex  h-60 sm:h-28 w-screen bg-[#E5E4E2] text-black">
-      <div className="sm:w-1/2 flex flex-col items-start sm:ml-20 justify-center sm:border-r-2 ">
-        <div className="flex">
-          <p className="font-bold mr-7">Address: </p>
-          <p>Eduworld, Block E Ansal Sushant City Panipat</p>
-        </div>
-        <div className="flex ">
-          <p className="font-bold mr-2">Contact us: </p>
-          <div className='flex flex-col sm:flex-row '>
-          <div className="sm:border-r-2 sm:mr-2 pr-2"> brainstreamliner@gmail.com </div>
-          <p>+91 7988417778</p>
-            </div>
-          
-        </div>
-        <div className='gap-2 h-full flex'>
-            {ContactItems.map(item=>(
-              
-              <a key={item.id} href={item.to} className=''>
-                <img src={item.ImagePath} className='w-6   h-6' alt="" />
-              </a>
-            ))}
+    <div className="w-full h-56 px-20 flex ">
+      <div className="px-20 mt-4 ">
+        <div className="">
+          <div className="font-extrabold text-[30px]  w-fit">
+            Get in touch!
           </div>
+          <div className="flex  mt-5">
+            <div>
+              <div className="font-extrabold text-blue text-xl ">Email</div>
+              <div>-brainstreamliner@gmail.com</div>
+            </div>
+            <div className='mx-32'>
+              <div className="font-extrabold text-blue text-xl">Social Media</div>
+              <div className="flex  justify-between gap-2 ">
+                {ContactItems.map((item) => (
+                  <a key={item.id} href={item.to} className="">
+                    <img src={item.ImagePath} className="w-6   h-6" alt="" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className='flex items-center justify-center sm:w-1/2'>
-        @copyright -puneeeeeeet
+      <div className=" mt-4 px-10">
+      <div>
+        <div className='font-extrabold text-[30px]  w-fit'>
+          Where we are
+        </div>
+        <div className='mt-5 '>
+          <div className='font-extrabold text-blue text-xl'>
+            Address
+          </div>
+          <div className='flex gap-4'>
+          <div className='flex-col'>
+          <p>Sector-13</p>
+          <p>Rohini, New Delhi</p>
+          <p className='font-semibold'>
+          +91 7988417778
+          </p>
+          </div> 
+          <div className='items-center justify-center flex text-center'>or</div>
+          <div>
+            <p>Eduworld</p>
+            <p>Block E,Ansal Sushant City</p>
+            <p>Panipat, 132103, Haryana</p>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+      
       </div>
     </div>
   );
 }
 
 export default Footer
+
+
+
+// {
+//   id:1,
+//   ImagePath:gmail,
+//   to:'mailto:brainstreamliner@gmail.com',
+// },

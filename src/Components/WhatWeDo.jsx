@@ -46,7 +46,7 @@ const WhatWeDo = () => {
               <p className='text-2xl '>What do we</p>
               <p className='text-4xl font-semibold mb-3 '>help with?</p> 
             </div>
-            <p className='sm:w-1/2 sm:11/12 text-black text-lg text-justify'>
+            <p className='sm:w-1/2 sm:11/12 text-black text-justify text-xl font-semibold'>
               Over 180 million Indians, or 14 per cent of the population, live with mental health issues. Many more suffer silently. Some are ashamed of seeking help. Some are afraid. Some cannot access the help they need.
             </p>
           </div>
