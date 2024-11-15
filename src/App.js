@@ -51,7 +51,7 @@ function App() {
     { id: 3, text: 'Sessions', path:'/Philosophy' , section:home },
     { id: 4, text: 'Training Programs', path:'/Workshop', section:home  },
     { id: 5, text: 'Workshop', path:'/Group', section:home  }, 
-    { id: 6, text: 'Blogs', path:'/Blog', section:'home'  },
+    { id: 6, text: 'Blogs', path:'/Blog', section:home  },
     { id: 7, text: 'Contact Us', path:'/ContactUs', section:home  },
     
   ];
@@ -61,12 +61,15 @@ function App() {
 
   return (
     <div className=" ">
-      <div className={navBack ? "navbar active shadow-xl " : "navbar"}>
+      <div className={navBack ? "navbar active shadow-xl z-30" : "navbar"}>
+        <div className=' w-full h-full flex justify-center items-center'>
+
+       
         <div
           to={"/"}
           className={
             navBack
-              ? "w-full text-3xl sm:text-[45px] font-bold text-[#8dc73f]   ml-4"
+              ? "w-fit text-3xl sm:text-[45px] font-bold text-[#8dc73f]   ml-4 "
               : "hidden"
           }
         >
@@ -90,7 +93,11 @@ function App() {
         {/* <h1 className='w-full text-2xl font-bold text-[#FFF8DB] m-4'>Brain Streamliner</h1> */}
 
         {/* Mobile Navigation Items */}
-        <div className=" md:flex hidden " >
+        <div className={
+    nav
+      ? navBack ? 'sm:fixed sm:flex hidden  text-[#8dc73f] bg-black z-30':'hidden'
+      : 'sm:flex hidden'
+  } >
           {navItems.map((item) => (
             <div
               to={item.path}
@@ -104,6 +111,7 @@ function App() {
               {item.text}
             </div>
           ))}
+        </div>
         </div>
 
         {/* </ul>
