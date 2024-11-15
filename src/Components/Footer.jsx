@@ -24,7 +24,7 @@ const Footer = () => {
 
 
   return (
-    <div className="w-full h-56 px-20 flex ">
+    <div className="w-full h-56 px-20 flex bg-green">
       <div className="px-20 mt-4 ">
         <div className="">
           <div className="font-extrabold text-[30px]  w-fit">
@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="flex  mt-5">
             <div>
               <div className="font-extrabold text-blue text-xl mb-4 ">Email</div>
-              <div>-brainstreamliner@gmail.com</div>
+              <div>brainstreamliner@gmail.com</div>
             </div>
             <div className='mx-32'>
               <div className="font-extrabold text-blue text-xl mb-4">Social Media</div>

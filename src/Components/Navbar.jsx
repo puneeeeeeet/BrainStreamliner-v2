@@ -28,21 +28,20 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: 'Home', path:'/' },
     { id: 2, text: 'About us', path:'/AboutUs' },
-    { id: 3, text: 'Our Philosphy', path:'/Philosophy' },
-    { id: 4, text: 'In-Person Consultation', path:'/Workshop' },
-    { id: 5, text: 'Virtual Consultation', path:'/Group' }, 
-    { id: 6, text: 'Services', path:'/Blog' },
+    { id: 3, text: 'Sessions', path:'/Philosophy' },
+    { id: 4, text: 'Training Programs', path:'/Workshop' },
+    { id: 5, text: 'Workshop', path:'/Group' }, 
+    { id: 6, text: 'Blogs', path:'/Blog' },
     { id: 7, text: 'Contact Us', path:'/ContactUs' },
     
   ];
 
   return (
-    <div className={navBack  ? 'navbar active ' :'navbar'}>
+    <div className={navBack  ? 'navbar active shadow-xl ' :'navbar'}>
 
       <Link  to={'/'} className={navBack ? 'w-full text-3xl sm:text-[45px] font-bold text-[#8dc73f]   ml-4':'hidden'}>Brain Streamliner</Link >
 
       {/* Desktop Navigation */}
-      {/* <ul className='hidden md:flex'> */}
 
       {/* ICON FOR NAVIGAYION OPEN AND CLOSE */}
       <div className='hidden md:flex' onClick={handleNav}>
@@ -51,7 +50,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? navBack ? 'fixed left-0 top-20 w-full h-fit  p-2   bg-[#F7F7F8] animate-fadeindown  duration-500  z-20 rounded-b-2xl text-[#8dc73f] font-semibold text-xl':'hidden'
+            ? navBack ? 'fixed left-0 top-20 w-full h-fit  p-2  shadow-xl bg-[#F7F7F8] animate-fadeindown  duration-500  z-20 rounded-b-2xl text-[#8dc73f] font-semibold text-xl':'hidden'
             : 'hidden fixed'
         }
       >

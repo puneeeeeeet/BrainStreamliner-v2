@@ -13,7 +13,7 @@ import HowDiff from '../Components/HowDiff';
 const Home = () => {
   return (
     <div>
-      <Navbar  /> 
+      {/* <Navbar  />  */}
       <CoverPage />
       {/* <Philosophy /> */}
       <StartTherapy></StartTherapy>

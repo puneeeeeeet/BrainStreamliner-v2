@@ -28,20 +28,36 @@ const CoverPage = () => {
           BrainStreamliner
         </div>
 
-{/*  */}
-
-
-        
-<div className=" flex flex-col items-center justify-center">
-        <a
-          href="https://wa.link/89ynnj"
-          className=" relative sm:p-2 border-white  text-white font-bold rounded-lg  border-2 sm:border-[3px] px-4 text-[20px] sm:text-2xl 
+        <div className=" flex flex-col items-center justify-center">
+          <a
+            href="https://wa.link/89ynnj"
+            className=" relative sm:p-2 border-white  text-white font-bold rounded-lg  border-2 sm:border-[3px] px-4 text-[20px] sm:text-2xl 
                   mt-20 mb-10 transform transition-transform hover:scale-105 cursor-pointer "
           >
-          Contact Us
-        </a>
+            Contact Us
+          </a>
+        </div>
+      </div>
 
-        {/* Left (Signup) Option */}
+      <div className="">
+        <video
+          src={Video}
+          loop
+          autoPlay
+          muted
+          className="sm:rounded-l-full  sm:animate-fadeinright  sm:w-fit sm:h-full"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default CoverPage;
+
+
+
+
+{/* Left (Signup) Option */}
         {/* <div
           className={`relative left-[-200px]  transition-all duration-300 transform ${
             showOptions ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'
@@ -62,23 +78,3 @@ const CoverPage = () => {
             Register
           </button>
         </div> */}
-      </div>
-
-          
-      
-      </div>
-
-      <div className="">
-        <video
-          src={Video}
-          loop
-          autoPlay
-          muted
-          className="sm:rounded-l-full  sm:animate-fadeinright  sm:w-fit sm:h-full"
-        />
-      </div>
-    </div>
-  );
-};
-
-export default CoverPage;

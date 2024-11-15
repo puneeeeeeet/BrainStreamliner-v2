@@ -29,16 +29,16 @@ const NavbarComm = () => {
   const navItems = [
     { id: 1, text: 'Home', path:'/' },
     { id: 2, text: 'About us', path:'/AboutUs' },
-    { id: 3, text: 'Our Philosphy', path:'/Philosophy' },
-    { id: 4, text: 'In-Person Consultation', path:'/Workshop' },
-    { id: 5, text: 'Virtual Consultation', path:'/Group' }, 
-    { id: 6, text: 'Services', path:'/Blog' },
+    { id: 3, text: 'Sessions', path:'/Philosophy' },
+    { id: 4, text: 'Training Programs', path:'/Workshop' },
+    { id: 5, text: 'Workshop', path:'/Group' }, 
+    { id: 6, text: 'Blogs', path:'/Blog' },
     { id: 7, text: 'Contact Us', path:'/Offer' },
     
   ];
 
   return (
-    <div className={'navbar active ' }>
+    <div className={'navbar active shadow-xl' }>
 
       <Link to={'/'} className={ 'w-full text-[45px] font-bold text-[#8dc73f]   ml-4'}>Brain Streamliner</Link >
 
