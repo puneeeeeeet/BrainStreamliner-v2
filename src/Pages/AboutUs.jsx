@@ -7,7 +7,7 @@ const AboutUs = () => {
  
   return (
     <div className="w-full h-full bg-[#DDDDDD]">
-      {/* <NavbarComm></NavbarComm> */}
+      
       <h1 className="  ml-6 sm:ml-24  pt-36 text-white text-[75px] font-bold z-10  text-center"></h1>
       {/* First Section */}
       <div className="flex flex-col sm:flex-row justify-center items-center py-2 mb-10 bg-green text-center relative">
@@ -21,15 +21,16 @@ const AboutUs = () => {
               className="h-72 w-72 px-5 absolute top-[-25px]"
             ></img>
             <div className="flex items-center justify-center gap-2 ">
+            <p className=" font-semibold">
+                (Psychologist)
+              </p>
               <a
                 href="https://www.linkedin.com/in/gayatri-ahuja7988417778/"
                 className="text-2xl  font-bold  text-white "
               >
                 Gayatri Ahuja
               </a>
-              <p className="underline underline-offset-2 font-semibold">
-                (Psychologist)
-              </p>
+             
             </div>
           </div>
         </div>
@@ -55,10 +56,10 @@ const AboutUs = () => {
         </div>
 
         <div className="w-10/12 sm:w-96 h-full  flex flex-col  justify-center py-20 relative items-center">
-          <h1 className="text-2xl  font-bold  underline-offset-2 text-center absolute top-3  ">
+          <h1 className="text-3xl  font-bold  underline-offset-2 text-center absolute top-3  ">
             Our Aim
           </h1>
-          <p className="text-wrap text-justify font-semibold  ">
+          <p className="text-wrap text-justify font-semibold text-[17px] ">
             At Brainstreamliner, our mission is to streamline your minds. We
             believe that clarity and emotional expression are essential for
             personal and professional growth. Our programs are crafted to help
@@ -80,16 +81,16 @@ const AboutUs = () => {
       {/* Second Section Ends*/}
 
       {/* Third Section Starts */}
-      <div className="flex justify-center  py-10 text-black relative bg-green ">
-        <div className=" mx-10  absolute  ">
-          <img src={tamana} className="h-72 w-72"></img>
+      <div className="flex justify-center items-center  text-black relative bg-green gap-2 mb-10">
+        <div className=" w-72 flex  items-center justify-center    ">
+          <img src={tamana} className="h-72 w-72 absolute top-[-16px]"></img>
         </div>
-        <div className="w-10/12 sm:w-full h-full justify-center bg-green py-20">
+        <div className=" items-center flex flex-col justify-center  py-10">
           <h1 className="text-2xl  font-semibold  underline-offset-2 text-center ">
             Our Services
           </h1>
           <div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 text-[17px]">
               <ul className="list-disc list-inside">
                 Training Programs
                 <li>Clinical Training</li>

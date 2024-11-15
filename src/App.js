@@ -4,6 +4,9 @@ import {useRef} from "react";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import CoverPage from "./Pages/CoverPage";
 import { StartTherapy } from "./Components/StartTherapy";
+import Footer from './Components/Footer';
+import WhatWeDo from './Components/WhatWeDo';
+import WhyChoose from './Components/WhyChoose'
 
 function App() {
       const home = useRef(null);
@@ -52,7 +55,7 @@ function App() {
     { id: 4, text: 'Training Programs', path:'/Workshop', section:home  },
     { id: 5, text: 'Workshop', path:'/Group', section:home  }, 
     { id: 6, text: 'Blogs', path:'/Blog', section:home  },
-    { id: 7, text: 'Contact Us', path:'/ContactUs', section:home  },
+    { id: 7, text: 'Contact Us', path:'/ContactUs', section:contact  },
     
   ];
 
@@ -75,27 +78,10 @@ function App() {
         >
           Brain Streamliner
         </div>
-
         {/* Desktop Navigation */}
-
-        {/* ICON FOR NAVIGAYION OPEN AND CLOSE */}
-        {/* <div className='hidden md:flex' onClick={handleNav}>
-{nav ? <AiOutlineClose size={25}  className='cursor-pointer '/> : <AiOutlineMenu size={25} className='cursor-pointer ' />} */}
-
-        {/* <ul
-  className={
-    nav
-      ? navBack ? 'fixed left-0 top-20 w-full h-fit  p-2  shadow-xl bg-[#F7F7F8] animate-fadeindown  duration-500  z-20 rounded-b-2xl text-[#8dc73f] ':'hidden'
-      : 'hidden fixed'
-  }
-> */}
-        {/* Mobile Logo */}
-        {/* <h1 className='w-full text-2xl font-bold text-[#FFF8DB] m-4'>Brain Streamliner</h1> */}
-
-        {/* Mobile Navigation Items */}
         <div className={
     nav
-      ? navBack ? 'sm:fixed sm:flex hidden  text-[#8dc73f] bg-black z-30':'hidden'
+      ? navBack ? ' sm:flex hidden  text-[#8dc73f] z-30':'hidden'
       : 'sm:flex hidden'
   } >
           {navItems.map((item) => (
@@ -114,9 +100,7 @@ function App() {
         </div>
         </div>
 
-        {/* </ul>
-</div> */}
-
+        
         {/* Mobile Navigation Icon */}
         <div
           onClick={handleNav}
@@ -153,9 +137,20 @@ function App() {
           ))}
         </ul>
       </div>
+      {/* PAGES */}
+
       <div ref={home}><CoverPage></CoverPage></div>
       <StartTherapy></StartTherapy>
       <div ref={about}><AboutUs></AboutUs></div>
+      <div>
+        <WhatWeDo></WhatWeDo>
+      </div>
+      <div>
+        <WhyChoose> </WhyChoose>
+      </div>
+      <div ref={contact}>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }
