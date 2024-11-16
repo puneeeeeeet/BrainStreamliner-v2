@@ -24,20 +24,20 @@ const Footer = () => {
 
 
   return (
-    <div className="w-full h-56 px-20 flex bg-green">
-      <div className="px-20 mt-4 ">
+    <div className="w-full sm:h-56 px-20 sm:flex bg-green">
+      <div className="sm:px-20 sm:mt-4 ">
         <div className="">
-          <div className="font-extrabold text-[30px]  w-fit">
+          <div className="font-extrabold text-[30px]  w-fit pt-10 sm:pt-0">
             Get in touch!
           </div>
-          <div className="flex  mt-5">
+          <div className="sm:flex  mt-5">
             <div>
-              <div className="font-extrabold text-blue text-xl mb-4 ">Email</div>
+              <div className="font-extrabold text-blue text-xl sm:mb-4 ">Email</div>
               <div>brainstreamliner@gmail.com</div>
             </div>
-            <div className='mx-32'>
+            <div className='sm:mx-32'>
               <div className="font-extrabold text-blue text-xl mb-4">Social Media</div>
-              <div className="flex  justify-between gap-2 ">
+              <div className="flex  justify-between gap-2 px-10 sm:px-0">
                 {ContactItems.map((item) => (
                   <a key={item.id} href={item.to} className="">
                     <img src={item.ImagePath} className="w-6   h-6" alt="" />
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className=" mt-4 px-10">
+      <div className=" mt-4 sm:px-10">
       <div>
         <div className='font-extrabold text-[30px]  w-fit'>
           Where we are
@@ -58,7 +58,7 @@ const Footer = () => {
           <div className='font-extrabold text-blue text-xl mb-4'>
             Address
           </div>
-          <div className='flex gap-4'>
+          <div className='sm:flex gap-4 pb-10'>
           <div className='flex-col'>
           <p>Sector-13</p>
           <p>Rohini, New Delhi</p>

@@ -8,19 +8,19 @@ const AboutUs = () => {
   return (
     <div className="w-full h-full bg-[#DDDDDD]">
       
-      <h1 className="  ml-6 sm:ml-24  pt-36 text-white text-[75px] font-bold z-10  text-center"></h1>
+      <h1 className="  ml-6 sm:ml-24 pt-20 text-white text-[75px] font-bold z-10  text-center sm:hidden ">About Us</h1>
       {/* First Section */}
-      <div className="flex flex-col sm:flex-row justify-center items-center py-2 mb-10 bg-green text-center relative">
-        <p className="z-10 absolute top-0 text-[70px] pl-20   text-[#FBFBFB] font-bold">
+      <div className="flex flex-col sm:flex-row justify-center items-center py-2 mb-10 bg-green text-center sm:relative">
+        <p className="hidden sm:flex z-10 absolute top-0 text-[70px] pl-20   text-[#FBFBFB] font-bold">
           About Us
         </p>
         <div className="flex flex-col items-center justify-center ">
-          <div className="w-72 mx-10 h-72 flex-col flex place-content-end ">
+          <div className="w-72 mx-10 sm:h-72 flex-col flex place-content-end ">
             <img
               src={pic}
-              className="h-72 w-72 px-5 absolute top-[-25px]"
+              className="h-72 w-72 px-5 sm:absolute sm:top-[-25px]"
             ></img>
-            <div className="flex items-center justify-center gap-2 ">
+            <div className="sm:flex items-center justify-center gap-2 ">
             <p className=" font-semibold">
                 (Psychologist)
               </p>
@@ -37,7 +37,7 @@ const AboutUs = () => {
 
         <div className="w-10/12 sm:w-96 h-full  flex  justify-center text-[#304463] py-4 sm:py-0">
           <div className="">
-            <p className="text-wrap text-justify  mt-5 text-black font-semibold text-[17px]">
+            <p className="text-wrap text-justify  sm:mt-5 text-black font-semibold text-[17px]">
               Welcome to "Brainstreamliner", a company dedicated to
               revolutionizing mental health and professional training in
               psychology. I am Gayatri Ahuja, MSc. in Clinical Psychology, and I
@@ -66,13 +66,6 @@ const AboutUs = () => {
             you navigate the complexities of thought and emotion, enabling you
             to achieve mental wellness.
           </p>
-          {/* <p className="text-wrap text-justify   ">
-              Brainstreamliner aims to enhance mental well-being and
-              professional growth through innovative and effective psychological
-              services. We are committed to providing tools and techniques that
-              promote mental clarity, emotional resilience, and overall
-              well-being
-            </p> */}
         </div>
         <div className="sm:w-72 mx-10 sm:h-80  w-0 h-0 ">
           <img src={tamana} className="h-full w-full"></img>
@@ -81,11 +74,11 @@ const AboutUs = () => {
       {/* Second Section Ends*/}
 
       {/* Third Section Starts */}
-      <div className="flex justify-center items-center  text-black relative bg-green gap-2 mb-10">
-        <div className=" w-72 flex  items-center justify-center    ">
-          <img src={tamana} className="h-72 w-72 absolute top-[-16px]"></img>
+      <div className="sm:flex justify-center items-center  text-black relative bg-green gap-2 mb-10">
+        <div className=" sm:w-72 w-full flex  items-center justify-center py-2   ">
+          <img src={tamana} className="h-72 w-72 sm:absolute top-[-16px]"></img>
         </div>
-        <div className=" items-center flex flex-col justify-center  py-10">
+        <div className=" items-center flex flex-col justify-center py-5 sm:py-10">
           <h1 className="text-2xl  font-semibold  underline-offset-2 text-center ">
             Our Services
           </h1>
@@ -112,7 +105,7 @@ const AboutUs = () => {
       </div>
       {/* Third Section Ends */}
       <div className="flex items-center justify-center pb-3">
-        <p className="text-2xl font-semibold">
+        <p className="text-2xl font-semibold  text-center">
           Join us at Brainstreamliner, where we turn the complexities of
           psychology into a journey of clarity and compassion.
         </p>
