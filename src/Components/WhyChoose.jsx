@@ -9,8 +9,8 @@ const WhyChoose = () => {
   return (
     <div className="bg-[#E5E4E2] pb-20 text-[#543310]">
       <div className="flex items-center justify-center text-3xl sm:text-[70px]
-        pt-20 font-bold text-white animate-fadeinup">
-        What do we help with?
+        sm:pt-36 pt-20 font-bold text-white ">
+        Join us through sessions
       </div>
 
       <div className="flex items-center justify-center p-20 ">
@@ -19,15 +19,15 @@ const WhyChoose = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center flex-col  sm:flex-row px-8 gap-6">
-        <div className="sm:w-80 w-full  h-96 flex items-center justify-center  flex-col 
-        border-4 border-white  rounded-md hover:animate-bounce">
+      <div className="flex items-center justify-center flex-col  sm:flex-row px-8 gap-6 sm:mb-8">
+
+        <div className="session ">
           <Icon icon={Guideance} color="blue" className="w-24 h-24">
             Image
             {/* IMAGE */}
           </Icon>
           <div className="text-2xl py-5  font-semibold text-black">
-          Expert-Led Training
+          Counseling Session
             {/* HEADING */}
           </div>
           <div className="text-xl text-center px-2 ">
@@ -35,13 +35,26 @@ const WhyChoose = () => {
             </div>
         </div>
 
-        <div className="sm:w-80 w-full  h-96 flex items-center justify-center  
-        flex-col border-4 border-white rounded-md hover:animate-bounce">
+        <div className="session">
+          <Icon icon={Guideance} color="blue" className="w-24 h-24">
+            Image
+            {/* IMAGE */}
+          </Icon>
+          <div className="text-2xl py-5  font-semibold text-black">
+          Therapy Session
+            {/* HEADING */}
+          </div>
+          <div className="text-xl text-center px-2 ">
+          Learn from seasoned professionals with extensive experience in various fields of psychology.
+            </div>
+        </div>
+
+        <div className="session">
           <Icon icon={SmartClass} className="w-24 h-24  ">
             {/* IMAGE */}
           </Icon>
           <div className="text-2xl py-5  font-semibold text-black">
-          Holistic Approach
+          1:1 Session
             {/* HEADING */}
           </div>
           <div className="text-xl text-center px-2">
@@ -49,14 +62,13 @@ const WhyChoose = () => {
             </div>
         </div>
 
-        <div className="sm:w-80 w-full  h-96 flex items-center justify-center  
-        flex-col border-4 border-white rounded-md hover:animate-bounce">
+        <div className="session">
           <Icon icon={WorkShop} className="w-24 h-24" size="large">
             {/* IMAGE */}
           </Icon>
           <div className="text-2xl py-5  font-semibold text-black">
             
-          Community & Support
+          Group Session
             {/* HEADING */}
           </div>
           <div className="text-xl text-center px-2">

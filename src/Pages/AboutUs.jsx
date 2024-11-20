@@ -1,12 +1,14 @@
 import React from 'react'
 import tamana from '../assets/tamana.jpg';
-import NavbarComm from '../Components/NavbarComm';
+import Aim from '../assets/aim.jpg'
 import pic from '../assets/about_pic.jpg'
+import Goal from '../assets/Aboutus2.jpg'
+import Aim2 from '../assets/brains.jpg'
 const AboutUs = () => {
 
  
   return (
-    <div className="w-full h-full bg-[#DDDDDD]">
+    <div className="w-full h-full bg-[#DDDDDD] sm:pt-36">
       
       <h1 className="  ml-6 sm:ml-24 pt-20 text-white text-[75px] font-bold z-10  text-center sm:hidden ">About Us</h1>
       {/* First Section */}
@@ -68,15 +70,15 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="sm:w-72 mx-10 sm:h-80  w-0 h-0 ">
-          <img src={tamana} className="h-full w-full"></img>
+          <img src={Aim2} className="h-full w-full rounded-full shadow-2xl  shadow-green"></img>
         </div>
       </div>
       {/* Second Section Ends*/}
 
       {/* Third Section Starts */}
-      <div className="sm:flex justify-center items-center  text-black relative bg-green gap-2 mb-10">
+      <div className="sm:flex justify-center items-center  text-black relative bg-green gap-4 mb-10">
         <div className=" sm:w-72 w-full flex  items-center justify-center py-2   ">
-          <img src={tamana} className="h-72 w-72 sm:absolute top-[-16px]"></img>
+          <img src={Goal} className="h-72 w-72 sm:absolute top-[-16px] rounded-full shadow-2xl shadow-white"></img>
         </div>
         <div className=" items-center flex flex-col justify-center py-5 sm:py-10">
           <h1 className="text-2xl  font-semibold  underline-offset-2 text-center ">

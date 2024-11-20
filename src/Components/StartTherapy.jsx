@@ -20,7 +20,7 @@ export const StartTherapy = () => {
           create a path toward clarity, healing, and a brighter tomorrow.
         </div>
         <div className="flex flex-col sm:flex-row sm:w-3/4 gap-7 mt-20 text-white text-[30px] font-extrabold justify-between px-8 sm:px-20 mb-10 sm:mb-0 ">
-          <div className=" w-full sm:w-5/12 h-56 border-[#A5B68D] border-2 text-green rounded-md transform transition-transform hover:scale-105  p-2 shadow-2xl pt-5">
+          <div className=" w-full sm:w-5/12 h-56 border-[#A5B68D] border-2 text-green rounded-md shadow-green transform transition-transform hover:scale-105  p-2 shadow-2xl pt-5">
             <div className="flex items-center justify-center">
               In-Person Consultation
             </div>
@@ -36,7 +36,7 @@ export const StartTherapy = () => {
               </Icon>
             </div>
           </div>
-          <div className=" w-full sm:w-5/12 h-56  border-2 text-[#7D8ABC] border-[#7D8ABC] rounded-md transform transition-transform hover:scale-105 p-2 shadow-2xl pt-5">
+          <div className=" w-full sm:w-5/12 h-56  border-2 text-[#7D8ABC] shadow-voilet border-[#7D8ABC] rounded-md transform transition-transform hover:scale-105 p-2 shadow-2xl pt-5">
             <div className=" flex items-center justify-center">
               Virtual Consultation
             </div>

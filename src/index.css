@@ -25,4 +25,9 @@ code {
   @apply bg-[#ffff] fixed bg-fixed top-0 flex justify-center items-center h-20  mx-auto px-4 text-[#8dc73f] w-full z-30
 }
 
+.session{
+  @apply sm:w-80 w-full  h-96 flex items-center justify-center  flex-col 
+  border-4 border-white  rounded-md shadow-2xl shadow-voilet transform transition-transform hover:scale-105 cursor-pointer
+}
+
 /* bg-[#FFAD60] */

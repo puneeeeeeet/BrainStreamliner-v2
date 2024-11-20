@@ -10,7 +10,7 @@ import WhyChoose from './Components/WhyChoose'
 
 function App() {
       const home = useRef(null);
-      const services = useRef(null);
+      const session = useRef(null);
       const about = useRef(null);
       const training = useRef(null);
       const blogs = useRef(null);
@@ -51,7 +51,7 @@ function App() {
   const navItems = [
     
     { id: 2, text: 'About us', path:'/AboutUs', section:about },
-    { id: 3, text: 'Sessions', path:'/Philosophy' , section:home },
+    { id: 3, text: 'Sessions', path:'/Philosophy' , section: session  },
     { id: 4, text: 'Training Programs', path:'/Workshop', section:home  },
     { id: 5, text: 'Workshop', path:'/Group', section:home  }, 
     { id: 6, text: 'Blogs', path:'/Blog', section:home  },
@@ -145,7 +145,7 @@ function App() {
       <div>
         <WhatWeDo></WhatWeDo>
       </div>
-      <div>
+      <div ref={session}>
         <WhyChoose> </WhyChoose>
       </div>
       <div ref={contact}>
