@@ -39,7 +39,7 @@ const Footer = () => {
               <div className="font-extrabold text-blue text-xl mb-4">Social Media</div>
               <div className="flex  justify-between gap-2 px-10 sm:px-0">
                 {ContactItems.map((item) => (
-                  <a key={item.id} href={item.to} className="">
+                  <a key={item.id} href={item.to} className="transform transition-transform hover:scale-105">
                     <img src={item.ImagePath} className="w-6   h-6" alt="" />
                   </a>
                 ))}

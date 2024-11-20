@@ -4,6 +4,7 @@ import Aim from '../assets/aim.jpg'
 import pic from '../assets/about_pic.jpg'
 import Goal from '../assets/Aboutus2.jpg'
 import Aim2 from '../assets/brains.jpg'
+import Goal3 from '../assets/goals6.jpg'
 const AboutUs = () => {
 
  
@@ -78,7 +79,7 @@ const AboutUs = () => {
       {/* Third Section Starts */}
       <div className="sm:flex justify-center items-center  text-black relative bg-green gap-4 mb-10">
         <div className=" sm:w-72 w-full flex  items-center justify-center py-2   ">
-          <img src={Goal} className="h-72 w-72 sm:absolute top-[-16px] rounded-full shadow-2xl shadow-white"></img>
+          <img src={Goal3} className="h-72 w-72 sm:absolute top-[-16px] rounded-b-full  shadow-xl shadow-white "></img>
         </div>
         <div className=" items-center flex flex-col justify-center py-5 sm:py-10">
           <h1 className="text-2xl  font-semibold  underline-offset-2 text-center ">
@@ -106,7 +107,7 @@ const AboutUs = () => {
         </div>
       </div>
       {/* Third Section Ends */}
-      <div className="flex items-center justify-center pb-3">
+      {/* <div className="flex items-center justify-center pb-3">
         <p className="text-2xl font-semibold  text-center">
           Join us at Brainstreamliner, where we turn the complexities of
           psychology into a journey of clarity and compassion.
@@ -119,7 +120,7 @@ const AboutUs = () => {
         >
           Contact Us
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
