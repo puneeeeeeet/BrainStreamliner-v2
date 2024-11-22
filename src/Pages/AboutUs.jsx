@@ -1,15 +1,13 @@
 import React from 'react'
 import tamana from '../assets/tamana.jpg';
-import Aim from '../assets/aim.jpg'
 import pic from '../assets/about_pic.jpg'
-import Goal from '../assets/Aboutus2.jpg'
 import Aim2 from '../assets/brains.jpg'
 import Goal3 from '../assets/goals6.jpg'
 const AboutUs = () => {
 
  
   return (
-    <div className="w-full h-full bg-[#DDDDDD] sm:pt-36">
+    <div className="w-full h-full bg-[#DDDDDD] sm:pt-36 pb-20">
       
       <h1 className="  ml-6 sm:ml-24 pt-20 text-white text-[75px] font-bold z-10  text-center sm:hidden ">About Us</h1>
       {/* First Section */}
@@ -77,7 +75,7 @@ const AboutUs = () => {
       {/* Second Section Ends*/}
 
       {/* Third Section Starts */}
-      <div className="sm:flex justify-center items-center  text-black relative bg-green gap-4 mb-10">
+      <div className="sm:flex justify-center items-center  text-black relative bg-green gap-4 ">
         <div className=" sm:w-72 w-full flex  items-center justify-center py-2   ">
           <img src={Goal3} className="h-72 w-72 sm:absolute top-[-16px] rounded-b-full  shadow-xl shadow-white "></img>
         </div>

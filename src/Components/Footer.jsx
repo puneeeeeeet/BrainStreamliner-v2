@@ -24,7 +24,7 @@ const Footer = () => {
 
 
   return (
-    <div className="w-full sm:h-56 px-20 sm:flex bg-green">
+    <div className="w-full sm:h-full px-20 sm:flex bg-green">
       <div className="sm:px-20 sm:mt-4 ">
         <div className="">
           <div className="font-extrabold text-[30px]  w-fit pt-10 sm:pt-0">

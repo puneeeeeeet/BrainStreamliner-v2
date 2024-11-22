@@ -26,8 +26,18 @@ code {
 }
 
 .session{
-  @apply sm:w-80 w-full  h-96 flex items-center justify-center  flex-col 
-  border-4 border-white  rounded-md shadow-2xl shadow-voilet transform transition-transform hover:scale-105 cursor-pointer
+  @apply sm:w-80 w-full  h-96 flex items-center justify-center  flex-col relative bg-white
+  border-4 border-green  rounded-md shadow-2xl shadow-green transform transition-transform hover:scale-105 cursor-pointer
+}
+.sessionCircle{
+  @apply w-52 h-52 absolute top-[-100px] rounded-full border-8 border-green items-center justify-center flex bg-white hover:bg-green p-4
 }
 
+.trainingBorderOdd{
+  @apply w-60 h-60 rounded-l-full  border-t-8 flex items-center justify-center border-l-8
+}
+.trainingBorderEven{
+  @apply w-60 h-60 rounded-l-full  border-l-8 flex items-center justify-center border-t-8
+
+}
 /* bg-[#FFAD60] */
