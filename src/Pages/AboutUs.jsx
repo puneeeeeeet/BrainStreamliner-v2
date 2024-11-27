@@ -19,18 +19,19 @@ const AboutUs = () => {
           <div className="w-72 mx-10 sm:h-72 flex-col flex place-content-end ">
             <img
               src={pic}
-              className="h-72 w-72 px-5 sm:absolute sm:top-[-25px]"
+              className="h-[270px] w-64 px-5 sm:absolute sm:top-[-25px]"
             ></img>
-            <div className="sm:flex items-center justify-center gap-2 ">
-            <p className=" font-semibold">
-                (Psychologist)
-              </p>
+            <div className="flex flex-col items-center justify-center  leading-tight">
+           
               <a
                 href="https://www.linkedin.com/in/gayatri-ahuja7988417778/"
                 className="text-2xl  font-bold  text-white "
               >
                 Gayatri Ahuja
               </a>
+              <p className=" font-semibold">
+                (Psychologist)
+              </p>
              
             </div>
           </div>
@@ -86,7 +87,8 @@ const AboutUs = () => {
           <div>
             <div className="flex gap-3 text-[17px]">
               <ul className="list-disc list-inside">
-                Training Programs
+                <p className='font-bold'>Training Programs
+                  </p>
                 <li>Clinical Training</li>
                 <li>Counseling Training</li>
                 <li>Art Therapy Training</li>
@@ -94,7 +96,7 @@ const AboutUs = () => {
                 <li>Therapies Training</li>
               </ul>
               <ul className="list-inside list-disc">
-                Session Offering
+               <p className='font-bold'>Session Offering</p> 
                 <li>Counseling Sessions</li>
                 <li> Therapy Sessions</li>
                 <li> 1:1 Sessions</li>
