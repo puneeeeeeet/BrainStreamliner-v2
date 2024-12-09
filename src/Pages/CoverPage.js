@@ -13,7 +13,7 @@ const CoverPage = () => {
   return (
     <div className="w-screen h-[fit] sm:h-screen sm:flex bg-[#E5E4E2]  ">
       <div
-        className="h-11/12  sm:w-8/12 sm:h-full  flex flex-col items-center justify-center sm:text-7xl text-4xl 
+        className="h-11/12  sm:w-full sm:h-full  flex flex-col items-center justify-center sm:text-7xl text-4xl 
             font-semibold  text-[#004aad] bg-[#E5E4E2]  "
       >
         <img
@@ -39,7 +39,7 @@ const CoverPage = () => {
         </div>
       </div>
 
-      <div className="">
+      {/* <div className="">
         <video
           src={Video}
           loop
@@ -47,7 +47,7 @@ const CoverPage = () => {
           muted
           className="sm:rounded-l-full  sm:animate-fadeinright  sm:w-fit sm:h-full"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react'
 import { Icon } from './icon/icon';
 import { WorkShop } from '../icons/WorkShop';
 import { SmartClass } from '../icons/SmartClass';
-
+import virtual from '../assets/virtual00.png'
 
 export const StartTherapy = () => {
   return (
@@ -40,20 +40,20 @@ export const StartTherapy = () => {
             <div className=" flex items-center justify-center">
               Virtual Consultation
             </div>
-            <div className="flex justify-between items-center sm:mx-8 sm:items-end">
+            <div className="flex justify-between items-center sm:mx-8 sm:items-end ">
               <button
-                className="  px-2 w-5/12 h-fit border-2 border-voilet rounded-md text-xl 
+                className="  px-2 w-5/12 h-fit border-2 border-voilet rounded-md text-xl sm:mb-6
                 transform transition-transform hover:scale-105"
               >
                 Book Now
               </button>
-              <Icon
-                icon={SmartClass}
-                className="w-32 h-24 text-voilet"
+              <img
+                src={virtual}
+                className="w-32 h-32 text-voilet"
                 size="large"
               >
                 {/* IMAGE */}
-              </Icon>
+              </img>
             </div>
           </div>
         </div>

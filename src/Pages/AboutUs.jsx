@@ -25,7 +25,7 @@ const AboutUs = () => {
            
               <a
                 href="https://www.linkedin.com/in/gayatri-ahuja7988417778/"
-                className="text-2xl  font-bold  text-white "
+                className="text-2xl  font-bold   "
               >
                 Gayatri Ahuja
               </a>
@@ -54,12 +54,12 @@ const AboutUs = () => {
       {/* Second Section */}
       <div className="flex sm:flex-row flex-col justify-center items-center py-8 text-black">
         <div className="w-80 mx-10 h-96 sm:w-0 sm:h-0 ">
-          <img src={tamana} className="h-full w-full"></img>
+          <img src={Aim2} className="h-full w-full"></img>
         </div>
 
         <div className="w-10/12 sm:w-96 h-full  flex flex-col  justify-center py-20 relative items-center">
           <h1 className="text-3xl  font-bold  underline-offset-2 text-center absolute top-3  ">
-            Our Aim
+            Our Vision
           </h1>
           <p className="text-wrap text-justify font-semibold text-[17px] ">
             At Brainstreamliner, our mission is to streamline your minds. We
