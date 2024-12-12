@@ -76,7 +76,7 @@ function App() {
             className={
               nav
                 ? navBack
-                  ? " sm:flex hidden  text-[#8dc73f] z-30"
+                  ? " sm:flex hidden z-30"
                   : "hidden"
                 : "sm:flex hidden"
             }
@@ -100,7 +100,7 @@ function App() {
         {/* Mobile Navigation Icon */}
         <div
           onClick={handleNav}
-          className={navBack ? "block md:hidden z-10 " : "hidden"}
+          className={navBack ? "block sm:hidden z-10 " : "hidden"}
         >
           {nav ? (
             <AiOutlineClose size={20} className="cursor-pointer" />
@@ -113,7 +113,7 @@ function App() {
         <ul
           className={
             nav
-              ? "fixed md:hidden left-0 top-0 w-[70%] h-full  bg-white ease-in-out duration-500 z-20 shadow-xl text-center"
+              ? "fixed sm:hidden left-0 top-0 w-[70%] h-full text-[#8dc73f] bg-white ease-in-out duration-500 z-30 shadow-xl text-center"
               : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
           }
         >

@@ -11,7 +11,7 @@ export const StartTherapy = () => {
         <div className="pt-20 text-2xl font-semibold">
           Start Your Therapy With
         </div>
-        <div className="sm:text-[50px] text-[40px] font-bold">Brain Streamliner</div>
+        <div className="sm:text-[50px] text-[40px] font-bold text-[#004aad]">Brain Streamliner</div>
         <div className="w-full sm:w-3/5 mt-7 px-4 sm:px-0 text-center font-medium text-xl">
           Begin your healing journey with Brainstreamliner, where every step is
           guided with care, compassion, and understanding. We believe in more

@@ -54,7 +54,7 @@ const AboutUs = () => {
       {/* Second Section */}
       <div className="flex sm:flex-row flex-col justify-center items-center py-8 text-black">
         <div className="w-80 mx-10 h-96 sm:w-0 sm:h-0 ">
-          <img src={Aim2} className="h-full w-full"></img>
+          <img src={Aim2} className="h-full w-full rounded-full shadow-2xl  shadow-green"></img>
         </div>
 
         <div className="w-10/12 sm:w-96 h-full  flex flex-col  justify-center py-20 relative items-center">

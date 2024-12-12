@@ -41,10 +41,10 @@ const WhatWeDo = () => {
     <>
       <div className='w-screen h-fit sm:h-fit flex sm:flex-row flex-col text-green bg-[#F5F7F8] relative pb-44'>
         <div className='sm:w-1/2 w-full  sm:flex sm:items-center flex-col gap-5 '>
-          <div className='sticky top-0 sm:top-52 sm:ml-40 sm:pb-40 mt-56 sm:w-full w-11/12 ml-4 '>
+          <div className='sticky top-0 sm:top-52 sm:ml-40 sm:pb-40 sm:mt-56 mt-20 sm:w-full w-11/12 ml-4 '>
             <div className='flex flex-col  w-3/4 text-xl  gap-5 '>
               <p className='text-[50px] h-fit'>What do we</p>
-              <p className='text-[75px] font-semibold mb-6 '>help with?</p> 
+              <p className='sm:text-[75px] text-[50px] font-semibold mb-6 '>help with?</p> 
             </div>
             <p className='sm:w-1/2 sm:11/12 text-black text-justify text-xl font-semibold'>
               Over 180 million Indians, or 14 per cent of the population, live with mental health issues. Many more suffer silently. Some are ashamed of seeking help. Some are afraid. Some cannot access the help they need.
