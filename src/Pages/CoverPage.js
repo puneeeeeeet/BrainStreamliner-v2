@@ -4,34 +4,30 @@ import logo from "../assets/logo.png";
 import Video from "../assets/video.mp4";
 
 const CoverPage = () => {
-  const [showOptions, setShowOptions] = useState(false);
+  // const [showOptions, setShowOptions] = useState(false);
 
-  const handleClick = () => {
-    setShowOptions(!showOptions);
-  };
+  // const handleClick = () => {
+  //   setShowOptions(!showOptions);
+  // };
 
   return (
     <div className="w-screen h-[fit] sm:h-screen sm:flex bg-[#E5E4E2]  ">
       <div
-        className="h-11/12  sm:w-full sm:h-full  flex flex-col items-center justify-center sm:text-7xl text-4xl 
-            font-semibold  text-[#004aad] bg-[#E5E4E2]  "
+        className="h-11/12  sm:w-8/12 sm:h-full  flex flex-col items-start justify-center sm:text-7xl text-4xl 
+            font-semibold   "
       >
-        <img
-          className="w-72 sm:pb-10 animate-zoomInUp mt-24 "
-          src={logo}
-          alt=""
-          height={80}
-          width={75}
-        />
-
-        <div className="animate-fadeinup   text-green text-[40px] sm:text-[80px] font-extrabold">
-          BrainStreamliner
+        <div className=" text-[#004aad] font-extrabold pl-10 mt-52">
+          Where every mind finds its flow
         </div>
 
-        <div className=" flex flex-col items-center justify-center">
+        <div className="animate-fadeinup   text-[#8dc73f] text-[40px] sm:text-[40px] font-extrabold px-10 mt-10">
+          ~BrainStreamliner
+        </div>
+
+        <div className=" flex flex-col items-center justify-center w-full">
           <a
             href="https://wa.link/89ynnj"
-            className=" relative sm:p-2 border-green  text-green font-bold rounded-lg  border-2 sm:border-[3px] px-4 text-[20px] sm:text-2xl 
+            className=" relative sm:p-2 border-[#8dc73f]  text-[#8dc73f] font-bold rounded-lg  border-2 sm:border-[3px] px-4 text-[20px] sm:text-2xl 
                   mt-20 mb-10 transform transition-transform hover:scale-105 cursor-pointer "
           >
             Contact Us
@@ -40,6 +36,7 @@ const CoverPage = () => {
       </div>
 
       {/* <div className="">
+      
         <video
           src={Video}
           loop
@@ -48,6 +45,15 @@ const CoverPage = () => {
           className="sm:rounded-l-full  sm:animate-fadeinright  sm:w-fit sm:h-full"
         />
       </div> */}
+      <div className=" w-1/2 flex items-center justify-center">
+      <img
+          className="w-full sm:pb-10 animate-zoomInUp  px-10"
+          src={logo}
+          alt=""
+          height={72}
+          width={72}
+        />
+      </div>
     </div>
   );
 };

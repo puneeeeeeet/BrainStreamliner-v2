@@ -4,7 +4,7 @@ import CoverPage from './CoverPage';
 // import Philosophy from '../Components/Philosophy';
 import WhatWeDo from '../Components/WhatWeDo';
 import About from '../Components/About';
-import Navbar from '../Components/Navbar';
+
 import Footer from '../Components/Footer';
 import { StartTherapy } from '../Components/StartTherapy';
 import HowDiff from '../Components/HowDiff';
@@ -13,7 +13,7 @@ import HowDiff from '../Components/HowDiff';
 const Home = () => {
   return (
     <div>
-      {/* <Navbar  />  */}
+     
       <CoverPage />
       {/* <Philosophy /> */}
       <StartTherapy></StartTherapy>
