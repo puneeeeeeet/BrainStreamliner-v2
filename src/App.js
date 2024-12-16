@@ -50,16 +50,16 @@ function App() {
   const navItems = [
     { id: 2, text: "About us", path: "/AboutUs", section: about },
     { id: 3, text: "Sessions", path: "/Philosophy", section: session },
-    { id: 4, text: "Training Programs", path: "/Workshop", section: training },
-    { id: 5, text: "Workshop", path: "/Group", section: home },
-    { id: 6, text: "Blogs", path: "/Blog", section: home },
+    { id: 4, text: "Reviews", path: "/Workshop", section: training },
+    // { id: 5, text: "Workshop", path: "/Group", section: home },
+    // { id: 6, text: "Blogs", path: "/Blog", section: home },
     { id: 7, text: "Contact Us", path: "/ContactUs", section: contact },
   ];
 
   return (
     <div className=" ">
       <div className={navBack ? "navbar active shadow-xl z-30" : "hidden"}>
-        <div className=" w-full h-full flex justify-center items-center">
+        <div className=" w-full h-full flex justify-between items-center">
           <div
             ref={home}
             onClick={() => scrollToSection(home)}
@@ -148,11 +148,12 @@ function App() {
       <div ref={session}>
         <WhyChoose> </WhyChoose>
       </div>
-      <div ref={training}>
-        <Training></Training>
-      </div>
+      
       <div>
         <HowDiff></HowDiff>
+      </div>
+      <div ref={training}>
+        <Training></Training>
       </div>
       <div ref={contact}>
         <Footer></Footer>

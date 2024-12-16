@@ -1,8 +1,10 @@
 import React from 'react'
+import nature from '../assets/nature.mp4'
 
 const HowDiff = () => {
   return (
-    <div className='w-screen h-fit sm:h-screen bg-[#E5E4E2]'>
+    <div className='w-screen h-fit sm:h-screen '>
+        <div className='z-20 absolute'>
         <div className='flex items-center justify-center text-center text-[30px] sm:text-[60px] pt-10 font-extrabold text-white'>
         How Therapy Is Different With Us?
         </div>
@@ -17,6 +19,11 @@ const HowDiff = () => {
         
         </div>
         
+        </div>
+        </div>
+        <div className='z-10  relative'>
+        <video src={nature} autoPlay muted loop className='w-screen h-1/2'/>
+
         </div>
         
      </div>

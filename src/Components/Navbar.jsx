@@ -29,9 +29,9 @@ const Navbar = () => {
     { id: 1, text: 'Home', path:'/' },
     { id: 2, text: 'About us', path:'/AboutUs' },
     { id: 3, text: 'Sessions', path:'/Philosophy' },
-    { id: 4, text: 'Training Programs', path:'/Workshop' },
-    { id: 5, text: 'Workshop', path:'/Group' }, 
-    { id: 6, text: 'Blogs', path:'/Blog' },
+    { id: 4, text: 'Reviews', path:'/Workshop' },
+    // { id: 5, text: '', path:'/Group' }, 
+    // { id: 6, text: 'Blogs', path:'/Blog' },
     { id: 7, text: 'Contact Us', path:'/ContactUs' },
     
   ];
