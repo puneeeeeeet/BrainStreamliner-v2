@@ -1,11 +1,12 @@
 import React from 'react'
 import "../cards/testStyles.css"
+import {motion} from 'motion/react'
 
 const Cards = () => {
   return (
     <div>
         <section class="card-list items-center justify-center ">
-          <article class="card">
+          <motion.div animate={{ y:-100}} class="card">
             <header class="card-header">
               <p>JUL - SEP 2023</p>
               <p className="text-left">- Frontend Developer Intern</p>
@@ -38,7 +39,7 @@ const Cards = () => {
             <div class="tags">
               {/* this is where you can add your certificates  */}
             </div>
-          </article>
+          </motion.div >
 
           <article class="card">
             <header class="card-header">

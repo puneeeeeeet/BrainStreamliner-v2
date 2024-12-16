@@ -58,7 +58,7 @@ function App() {
 
   return (
     <div className=" ">
-      <div className={navBack ? "navbar active shadow-xl z-30" : "navbar"}>
+      <div className={navBack ? "navbar active shadow-xl z-30" : "hidden"}>
         <div className=" w-full h-full flex justify-center items-center">
           <div
             ref={home}
