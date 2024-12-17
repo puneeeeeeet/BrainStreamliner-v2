@@ -82,7 +82,7 @@ const Cards = () => {
           <article class="card">
             <header class="card-header">
               <p>"Gayatri Ma’am combines theoretical knowledge with real-world examples that make her training programs exceptional." </p>
-              <p>"She ensures every participant walks away with actionable skills."</p>
+              {/* <p>"She ensures every participant walks away with actionable skills."</p> */}
             </header>
 
             <div class="card-author">
@@ -145,7 +145,7 @@ const Cards = () => {
               </svg>
 
               <div class="author-name">
-                <div className=" text-white text-xl font-extrabold">Naman Dosi</div>
+                <div className=" text-white text-xl font-extrabold">Aditya Gaur</div>
                 <div className='flex text-[#FFEE58]'> <FaStar /> <FaStar/> <FaStar/> <FaStar/> <FaStarHalfAlt /> </div>
               </div>
             </div>

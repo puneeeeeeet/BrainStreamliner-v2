@@ -25,12 +25,12 @@ const CoverPage = () => {
           width={72}
         />
       </div>
-        <div className=" text-[#004aad] font-extrabold pl-10 sm:mt-52">
+        <div className=" text-[#004aad] font-bold pl-10 sm:mt-52">
           Where every mind finds its flow
         </div>
 
-        <div className="animate-fadeinup   text-[#8dc73f] text-[20px] sm:text-[40px] font-extrabold sm:px-10 mt-10">
-          ~BrainStreamliner
+        <div className="animate-fadeinup   text-[#8dc73f] text-[20px] sm:text-[40px] font-bold sm:px-10 mt-10">
+          ~Brain Streamliner
         </div>
 
         <div className=" flex flex-col items-center justify-center w-full">

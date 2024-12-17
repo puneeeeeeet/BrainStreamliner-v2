@@ -5,7 +5,7 @@ const Philosophy = () => {
     <div className='w-screen min-h-screen bg-white '>
       <NavbarComm></NavbarComm>
         <div className='sm:w-1/2 flex items-center justify-center flex-col h-screen text-[#543310] font-medium'>
-        <div className='text-[#004aad] w-11/12 sm:w-1/2 ml-5 sm:ml-0 font-customFont'>
+        <div className='text-[#004aad] w-11/12 sm:w-1/2 ml-5 sm:ml-0 '>
             <p className='text-3xl font-ital ml-1'>Our</p>
             <p className='sm:text-7xl text-5xl font-philo font-bold'>Philosophy</p>
             <p className='text-3xl font-ital ml-1'>of  Thought</p>

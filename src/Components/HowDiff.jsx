@@ -3,7 +3,7 @@ import nature from '../assets/nature.mp4'
 
 const HowDiff = () => {
   return (
-    <div className='w-screen h-fit sm:h-screen '>
+    <div className='w-screen h-fit sm:h-fit '>
         <div className='z-20 absolute'>
         <div className='flex items-center justify-center text-center text-[30px] sm:text-[60px] pt-10 font-extrabold text-white'>
         How Therapy Is Different With Us?
@@ -14,9 +14,7 @@ const HowDiff = () => {
         
         </div>
         <div className='w-7/12 text-center mt-20 text-xl font-semibold'>
-        Our approach blends compassion with expertise, ensuring that each client feels truly heard, understood, and supported throughout their journey. Whether it’s training future psychologists or providing therapy, we emphasize quality, empathy, and lasting change. At Brainstreamliner, healing isn’t just a process—it’s a partnership.
-        
-        
+        Our approach blends compassion with expertise, ensuring that each client feels truly heard, understood, and supported throughout their journey. Whether it’s training future psychologists or providing therapy, we emphasize quality, empathy, and lasting change. At Brainstreamliner, healing isn’t just a process—it’s a partnership.  
         </div>
         
         </div>

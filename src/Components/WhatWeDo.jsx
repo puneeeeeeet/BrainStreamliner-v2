@@ -31,7 +31,7 @@ const WhatWeDo = () => {
     { blackBoxText: 'OCD', sideBoxText: 'Where the mind insists on a replay, even when the heart wants to move forward',source:ocd },
     { blackBoxText: 'PTSD', sideBoxText: 'A past echo that disrupts today’s melody.',source:ptsd },
     { blackBoxText: 'Sleep Disorder', sideBoxText: 'Contrary to pop culture wisdom, love is not always easy. And that’s okay.We can help.',source:sleep },
-    { blackBoxText: 'Stress', sideBoxText: 'Today’s hustle culture has normalized constant stress. That’s not the way it needs to be. We can help' ,source:stress},
+    { blackBoxText: 'Stress', sideBoxText: 'Today’s hustle culture has normalized constant stress. That’s not the way it needs to be.' ,source:stress},
     { blackBoxText: 'Anger Issues', sideBoxText: 'A fleeting spark that can burn bridges.',source:anger },
     { blackBoxText: 'Personality Disorder', sideBoxText: 'A complex dance of traits, where understanding and support lead the way.' ,source:personality},
     { blackBoxText: 'Substance Dependence', sideBoxText: 'When the chains are invisible, but the struggle is real.' ,source:last}
@@ -44,7 +44,7 @@ const WhatWeDo = () => {
           <div className='sticky top-0 sm:top-52 sm:ml-40 sm:pb-40 sm:mt-56 mt-20 sm:w-full w-11/12 ml-4 '>
             <div className='flex flex-col  w-3/4 text-xl  gap-5 '>
               <p className='text-[50px] h-fit'>What do we</p>
-              <p className='sm:text-[75px] text-[50px] font-semibold mb-6 '>help with?</p> 
+              <p className='sm:text-[70px] text-[50px] font-semibold mb-6 '>help with?</p> 
             </div>
             <p className='sm:w-1/2 sm:11/12 text-black text-justify text-xl font-semibold'>
               Over 180 million Indians, or 14 per cent of the population, live with mental health issues. Many more suffer silently. Some are ashamed of seeking help. Some are afraid. Some cannot access the help they need.
@@ -58,7 +58,7 @@ const WhatWeDo = () => {
           {data.map((item, index) => (
             <div
             key={index}
-            className='flex sticky w-full mb-24 items-end justify-center  sm:transform sm:transition-transform sm:hover:scale-105 '
+            className='flex sticky w-full mb-24 items-end justify-center   '
             style={{ top: `${150 + index * 0}px` }}  // Adjust this value for overlap
           >
            
