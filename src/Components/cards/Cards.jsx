@@ -1,158 +1,109 @@
-import React from 'react'
-import "../cards/testStyles.css"
-import { FaStar } from "react-icons/fa";
-import { FaStarHalfAlt } from "react-icons/fa";
-import { FaRegStar } from "react-icons/fa";
-import therapy1 from '../../assets/tamana.jpg'
+import "../cards/testStyles.css";
 
 const Cards = () => {
   return (
-    <div>
-        <section class="card-list items-center justify-center ">
-          <div  class="card">
+    <>
+      <div className="">
+        <h1 className="text-4xl  text-white"></h1>
+        <section class="card-list ">
+          <article class="card">
             <header class="card-header">
-              <p>"Gayatri Ma’am’s training programs are truly transformative. Her practical approach and deep knowledge stand out!"</p>
-            </header>
-
-            <div class="card-author">
               
-                <img className='w-16 h-16 rounded-full'
-                  src={therapy1}
-                  alt="logo"
-                />
-              
-              {/* <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg> */}
-
-              <div class="author-name">
-                <div class="author-name-prefix text-white text-xl font-extrabold">Ritika Yadav</div>
-               <div className='flex text-[#FFEE58]'> <FaStar /> <FaStar/> <FaStar/> <FaStar/> <FaStarHalfAlt /> </div>
-              </div>
-            </div>
-          </div >
-
-          <article class="card">
-            <header class="card-header">
-              <p>"Brainstreamliner workshops are the best I’ve ever attended. So well-structured and insightful!"</p>
+              <p className="text-left">
+              "Gayatri Ma&apos;am&apos;s training programs are truly transformative. Her practical approach and deep knowledge stand out!"</p>
             </header>
 
-            <div class="card-author">
-              <a class="author-avatar" href="https://hackoheist.devfolio.co/">
-                <img
-                  src="https://hackoheist.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2Fb107fe2300b448648beb001354fb4e67%2Fassets%2Ffavicon%2F274.png&w=1440&q=75"
-                  alt="hackathon"
-                />
-              </a>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
+            
 
-              <div class="author-name">
-                <div class="author-name-prefix text-white text-xl font-extrabold">Kashish Veda</div>
-                <div className='flex text-[#FFEE58]'> <FaStar /> <FaStar/> <FaStar/> <FaStar/> <FaStar /> </div>
-              </div>
-            </div>
-          </article>
-
-
-          <article class="card">
-            <header class="card-header">
-              <p>"I have attended multiple workshops, but nothing compares to the experience at Brainstreamliner. Her ability to blend psychology concepts with practical application is unparalleled."</p>
-            </header>
-
-            <div class="card-author">
-              <a class="author-avatar" href="https://www.rentyaar.com/">
-                <img
-                  src="https://www.rentyaar.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Frentyaar-logo-png2.90dd241f39b046774afd2d6911fe0bb3.png&w=1920&q=75"
-                  alt="logo"
-                />
-              </a>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
-
-              <div class="author-name">
-                <div class="author-name-prefix text-white text-xl font-extrabold">Puneet Chhabra </div>
-                <div className='flex text-[#FFEE58]'> <FaStar /> <FaStar/> <FaStar/> <FaStar/> <FaStar/> </div>
-              </div>
-            </div>
-          </article>
-          
-          <article class="card">
-            <header class="card-header">
-              <p>"Gayatri Ma’am combines theoretical knowledge with real-world examples that make her training programs exceptional." </p>
-              {/* <p>"She ensures every participant walks away with actionable skills."</p> */}
-            </header>
-
-            <div class="card-author">
-              <a class="author-avatar" href="https://internshala.com/">
-                <img
-                  src="data:image/png;base64,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"
-                  alt="logo"
-                />
-              </a>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
-
-              <div class="author-name">
-                <div class="author-name-prefix text-white text-xl font-extrabold">Sachin Singla</div>
-                <div className='flex text-[#FFEE58]'> <FaStar /> <FaStar/> <FaStar/> <FaStar/> <FaStarHalfAlt /> </div>
-              </div>
+            <div class="tags space-x-2">
+              ~Vani Katyal
             </div>
           </article>
           <article class="card">
             <header class="card-header">
-             <p>
-             "Gayatri Ma’am always provides logical, clear solutions to complex queries. Highly recommend her sessions!"
-             </p>
+             
+              <p className="text-left">
+              "Brainstreamliner workshops are the best I&apos;ve ever attended. So well-structured and insightful!"
+              </p>
             </header>
 
-            <div class="card-author">
-              <a class="author-avatar" href="https://hackoheist.devfolio.co/">
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ZwRqw4J3AXvXO6EbZG3qSwAAAA%26pid%3DApi&f=1&ipt=a3f5f30389e992409a5b660a1da9805cee22682cb31d031283a6a617775314e9&ipo=images"
-                  alt="hackathon"
-                />
-              </a>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
+            
 
-              <div class="author-name">
-                <div className=" text-white text-xl font-extrabold">Naman Dosi</div>
-                <div className='flex text-[#FFEE58]'> <FaStar /> <FaStar/> <FaStar/> <FaStar/> <FaRegStar /></div>
-              </div>
+            <div class="tags space-x-2">
+              ~Radhika Arora
             </div>
           </article>
+
           <article class="card">
             <header class="card-header">
-             <p>
-             "Gayatri Ma’am always provides logical, clear solutions to complex queries. Highly recommend her sessions!"
-             </p>
+              <p className="text-left">
+              "I have attended multiple workshops, but nothing compares to the experience at Brainstreamliner. Her ability to blend psychology concepts with practical application is unparalleled."</p>
             </header>
 
-            <div class="card-author">
-              <a class="author-avatar" href="https://hackoheist.devfolio.co/">
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ZwRqw4J3AXvXO6EbZG3qSwAAAA%26pid%3DApi&f=1&ipt=a3f5f30389e992409a5b660a1da9805cee22682cb31d031283a6a617775314e9&ipo=images"
-                  alt="hackathon"
-                />
-              </a>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
-
-              <div class="author-name">
-                <div className=" text-white text-xl font-extrabold">Aditya Gaur</div>
-                <div className='flex text-[#FFEE58]'> <FaStar /> <FaStar/> <FaStar/> <FaStar/> <FaStarHalfAlt /> </div>
-              </div>
+            <div class="tags space-x-2">
+            ~Aditya Gaur
             </div>
           </article>
+
+          <article class="card">
+            <header class="card-header">
+              <p>Dec 2023</p>
+              <p className="text-left">
+              "Gayatri Ma&apos;am combines theoretical knowledge with real-world examples that make her training programs exceptional."</p>
+            </header>
+
+            <div class="tags space-x-2">
+              ~Akshar
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <p>Jun 2024</p>
+              <p className="text-left">
+              "Gayatri Ma&apos;am always provides logical, clear solutions to complex queries. Highly recommend her sessions!"</p>
+            </header>
+
+            <div class="tags space-x-2">
+             ~Naman Dosi
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <p>Aug 2024</p>
+              <p className="text-left">
+              "Always provides logical, clear solutions to complex queries. Highly recommends her sessions!"</p>
+            </header>
+
+            <div class="tags space-x-2">
+              ~Harshita Saini
+            </div>
+          </article>
+
+          {/* <article class="card">
+            <header class="card-header">
+              <p>2 February 2021</p>
+              <p className="text-left">
+                A news application that retrieves data from the Hackernews API
+                and displays it in a beautiful dark interface.
+              </p>
+            </header>
+
+            <div class="project-author ">
+              <div class="author-name">
+                <div class="author-name-prefix text-white ">Hacker News</div>
+              </div>
+            </div>
+
+            <div class="tags space-x-2">
+              <a href="https://github.com/thelordzeus/HackerNews">Code</a>
+            </div>
+          </article> */}
         </section>
-    </div>
-  )
-}
+      </div>
+    </>
+  );
+};
 
-export default Cards
+export default Cards;
