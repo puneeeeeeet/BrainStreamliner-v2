@@ -47,7 +47,7 @@ const Cards = () => {
 
           <article class="card">
             <header class="card-header">
-              <p>Dec 2023</p>
+              
               <p className="text-left">
               "Gayatri Ma&apos;am combines theoretical knowledge with real-world examples that make her training programs exceptional."</p>
             </header>
@@ -59,7 +59,7 @@ const Cards = () => {
 
           <article class="card">
             <header class="card-header">
-              <p>Jun 2024</p>
+              
               <p className="text-left">
               "Gayatri Ma&apos;am always provides logical, clear solutions to complex queries. Highly recommend her sessions!"</p>
             </header>
@@ -71,7 +71,7 @@ const Cards = () => {
 
           <article class="card">
             <header class="card-header">
-              <p>Aug 2024</p>
+              
               <p className="text-left">
               "Always provides logical, clear solutions to complex queries. Highly recommends her sessions!"</p>
             </header>
