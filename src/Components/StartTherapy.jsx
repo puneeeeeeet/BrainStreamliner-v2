@@ -8,11 +8,11 @@ export const StartTherapy = () => {
   return (
     <div className="w-screen h-fit sm:h-screen bg-[#F5F7F8]">
       <div className="flex flex-col items-center">
-        <div className="pt-20 text-2xl font-semibold">
+        <div className="pt-20 text-2xl font-semibold text-[#7a7a8c]">
           Start Your Therapy With
         </div>
         <div className="sm:text-[50px] text-[40px] font-bold text-[#004aad]">Brain Streamliner</div>
-        <div className="w-full sm:w-3/5 mt-7 px-4 sm:px-0 text-center font-medium text-xl">
+        <div className="w-full sm:w-3/5 mt-7 px-4 sm:px-0 text-center font-medium text-xl text-[#7a7a8c]">
           Begin your healing journey with Brainstreamliner, where every step is
           guided with care, compassion, and understanding. We believe in more
           than just therapy—we believe in truly listening, supporting, and

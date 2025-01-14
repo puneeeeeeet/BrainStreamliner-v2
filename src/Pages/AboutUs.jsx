@@ -1,6 +1,6 @@
 import React from 'react'
-import tamana from '../assets/tamana.jpg';
-import pic from '../assets/about_pic.jpg'
+import Gayatri from '../assets/Gayatri.jpeg'
+// import pic from '../assets/about_pic.jpg'
 import Aim2 from '../assets/brains.jpg'
 import Goal3 from '../assets/goals6.jpg'
 const AboutUs = () => {
@@ -18,8 +18,8 @@ const AboutUs = () => {
         <div className="flex flex-col items-center justify-center ">
           <div className="w-72 mx-10 sm:h-72 flex-col flex place-content-end ">
             <img
-              src={pic}
-              className="h-[270px] w-64 px-5 sm:absolute sm:top-[-25px]"
+              src={Gayatri}
+              className="h-[270px] w-64 px-5 sm:absolute sm:top-[-25px] "
             ></img>
             <div className="flex flex-col items-center justify-center  leading-tight">
            
